@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/reset.css">
+  <link rel="stylesheet" href="lesson.css">
+  <title>Document</title>
+</head>
+<!-- mobile mode -->
+<!-- 問題のやじるし直す -->
+
+<body>
+  <div class="container">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="logo">logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">ロードマップ</a></li>
+          <li><a href="#">レッスン一覧</a></li>
+          <li><a href="#">記事一覧</a></li>
+          <li><a href="#">サイトの使い方</a></li>
+          <li><a href="#">その他</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main area -->
+    <div class="main-area">
+      <div class="top-area">
+        <div class="title-card">
+          <h1>SVCの使い方SVCの使い方SVCの使い方SVCの使い方</h1>
+          <div class="basic-button-outer">
+            <div class="basic-button grad-button" onclick="openCloseDesc()">解説を<span id="openClose">開く</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="description-area content unshown" id="description-area">
+        <h2>解説</h2>
+        <p>ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。description is here ここに解説が入ります。</p>
+        <p>This is a pen. <br>ごりら</p>
+        <div class="en-example">
+          <p>This is a pen.</p>
+        </div>
+        <div class="en-example">
+          <p class="en">This is a pen.</p>
+          <p class="ja">これはペンです。</p>
+        </div>
+        <p>ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。description is here ここに解説が入ります。</p>
+        <div class="basic-button-outer close-button-outer">
+          <div class="basic-button grad-button" onclick="openCloseDesc()">解説を閉じる</div>
+        </div>
+      </div>
+      <div class="practice-area content">
+        <h2 id="practice-title">練習</h2>
+        <p>それでは練習をしましょう。目安は10回繰り返すことです！</p>
+        <div class="qa-container">
+          <div class="qa-box">
+            <input id="q-1" class="qa-checkbox" type="checkbox" />
+            <label for="q-1">これはペンです。</label>
+            <div class="en">This is a pen.</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-2" class="qa-checkbox" type="checkbox" />
+            <label for="q-2">2. あれは業務スーパーですか？</label>
+            <div class="en">Is that gyoumu super?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-3" class="qa-checkbox" type="checkbox" />
+            <label for="q-3">3. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-4" class="qa-checkbox" type="checkbox" />
+            <label for="q-4">4. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-5" class="qa-checkbox" type="checkbox" />
+            <label for="q-5">5. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-6" class="qa-checkbox" type="checkbox" />
+            <label for="q-6">6. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-7" class="qa-checkbox" type="checkbox" />
+            <label for="q-7">7. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-8" class="qa-checkbox" type="checkbox" />
+            <label for="q-8">8. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-9" class="qa-checkbox" type="checkbox" />
+            <label for="q-9">9. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+          <div class="qa-box">
+            <input id="q-10" class="qa-checkbox" type="checkbox" />
+            <label for="q-10">10. あなたにとって山とは</label>
+            <div class="en">What means Mountain for you?</div>
+          </div>
+        </div>
+        <div class="basic-button-outer">
+          <div class="basic-button grad-button" id="againButton" onclick="praticeAgain()">もう一度練習！<span id="practiceCounter">あと <span id="practiceCounterNumber">9</span> 回</span></div>
+        </div>       
+      </div>
+    </div>
+  </div>
+  <script src="lesson.js"></script>
+</body>
+</html>

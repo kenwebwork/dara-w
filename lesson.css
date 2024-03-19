@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #000000de;
+}
+
+/* elements */
+.basic-button-outer {
+  display: flex;
+  justify-content: center;
+}
+.basic-button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.grad-button {
+  background: linear-gradient(to right, #5170ff, #ff66c4);
+  color: #fff;
+}
+
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 22vw;
+  height: 100vh;
+  background-color: #2c2c2c;
+  border: solid 1px #000;
+}
+
+.sidebar .logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translateX(-50%);
+  border: solid 1px #fff;
+}
+
+.sidebar nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.sidebar nav li {
+  position: relative;
+  padding: 20px 0 20px 20px;
+  display: block;
+  transition: .1s;
+}
+
+.sidebar nav li:hover {
+  background-color: #444;
+}
+
+.sidebar nav li a {
+  font-size: 1.25rem;
+  color: #fff;
+}
+.sidebar nav li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: transparent;
+}
+
+
+/* main area */
+.main-area {
+  width: 78vw;
+  margin-left: 22vw;
+  overflow-x: hidden;
+}
+
+.top-area {
+  position: relative;
+  padding: 20px 0;
+  background-color: #5e17eb;
+}
+
+.top-area .title-card {
+  position: relative;
+  margin: 0 auto;
+  padding: 18px 15px;
+  width: 50%;
+  height: auto;
+  background-color: #fff;
+  border: solid 2px #000;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.title-card h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.content {
+  padding: 30px 10% 30px;
+}
+
+.content h2 {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+#isOpen {
+  display: none;
+}
+
+
+/* description */
+.description-area {
+  background-color: #edf0ff;
+  transition: .1s;
+}
+
+.description-area.unshown {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.description-area .en-example {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.description-area .en-example p {
+  margin-bottom: 0;
+}
+
+.description-area .en-example p.ja{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: solid 1px #000000de;
+}
+
+.description-area p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.close-button-outer {
+  margin-top: 45px;
+}
+
+.description-area .desc-button {
+  background: linear-gradient(to right, #5170ff, #ff66c4);
+}
+
+/* practice area */
+.qa-container {
+  margin-bottom: 45px;
+}
+
+.qa-box {
+  position: relative;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #edf0ff;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.qa-box:last-child {
+  margin-bottom: 0;
+}
+
+.qa-box input{
+  display: none;
+}
+
+.qa-box label{
+  position: relative;
+  display: block;
+  width: calc(100% - 15px);
+  height: 100%;
+  cursor: pointer;
+}
+
+.qa-box label:after {
+  content:"";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+  border-bottom: solid 1.5px #000000cf;
+  border-right: solid 1.5px #000000cf;
+  background-color: transparent;
+  transform: rotate(45deg);
+  transition: .15s;
+}
+
+.qa-checkbox:checked ~ label::after {
+  transform: rotate(225deg);
+  top: 55%;
+}
+
+.qa-box .en {
+  height: 0px;
+  width: calc(100% - 40px);
+  overflow: hidden;
+  opacity: 0;
+  transition: .15s;
+}
+
+.qa-checkbox:checked ~ .en {
+  height: auto;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: solid 1px #777;
+  opacity: 1;
+}
+
+#practiceCounter {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+
+/* Tab and Mobile */
+@media screen and (max-width: 834px) {
+}
+@media screen and (max-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-area {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .top-area .title-card {
+    width: 78%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .content {
+    padding: 30px 15px 30px;
+  }
+}
