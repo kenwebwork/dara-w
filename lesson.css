@@ -2,6 +2,10 @@
   display: none;
 }
 
+.title-card .basic-button-outer {
+  margin: 25px 0;
+  display: block;
+}
 
 /* description */
 .description-area {
@@ -138,5 +142,8 @@
   }
 }
 @media screen and (max-width: 375px) {
-  
+  .title-card .basic-button-outer {
+    display: flex;
+    justify-content: center;
+  }
 }

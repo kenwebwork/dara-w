@@ -52,8 +52,7 @@ body {
 
 .slider-contents ul {
   display: block;
-  width: 90%;
-  margin: 0 auto;
+  margin:0 10vw;
 }
 
 #slider ul li {
@@ -100,9 +99,12 @@ header {
   display: none;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: calc(100vw - 20%);
   height: 50px;
-  background: #5e17eb;
+  padding: 0 10%;
+  background: #fff;
+  opacity: .9;
+  transition: .25s;
   z-index: 10;
 }
 
@@ -112,8 +114,8 @@ header {
 }
 .menu-btn {
   display: flex;
-  height: 60px;
-  width: 60px;
+  height: 25px;
+  width: 25px;
   justify-content: center;
   align-items: center;
   z-index: 90;
@@ -126,9 +128,9 @@ header {
   height: 3px;
   width: 25px;
   border-radius: 3px;
-  background-color: #ffffff;
+  background-color: #000;
   position: absolute;
-  transition: .1s;
+  transition: .2s;
 }
 .menu-btn span:before {
   bottom: 8px;
@@ -214,30 +216,22 @@ header {
 /* top area */
 .top-area {
   position: relative;
-  padding: 20px 0;
-  background-color: #5e17eb;
+  padding-top: 40px;
 }
 
 .top-area .title-card {
   position: relative;
-  margin: 0 auto;
-  padding: 18px 15px;
-  width: 50%;
+  margin-left: 10%;
+  display: inline-block;
   height: auto;
-  background-color: #fff;
-  border: solid 2px #000;
   border-radius: 20px;
+  background-color: #fff;
   z-index: 3;
 }
 
 .title-card h1 {
-  text-align: center;
   font-size: 2rem;
   font-weight: bold;
-}
-
-.title-card .basic-button-outer {
-  margin-top: 20px;
 }
 
 /* content */
@@ -331,8 +325,30 @@ footer .social-nav {
     width: 100vw;
     margin-left: 0;
   }
+
+  .top-area {
+    padding-top: 60px;
+  }
 }
 @media screen and (max-width: 375px) {
+  .slider-contents ul {
+    margin: 0 15px;
+  }
+
+  header {
+    padding: 0 15px;
+    width: calc(100vw - 30px);
+  }
+
+  .top-area .title-card {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .title-card h1 {
+    text-align: center;
+  }
+
   .content {
     padding: 30px 15px 30px;
   }
