@@ -23,6 +23,128 @@ body {
   color: #fff;
 }
 
+/* slider */
+#slider {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  color: #000000de;
+  z-index: 10;
+  transition: .15s;
+}
+
+#slider.unshown {
+  left: -110%;
+}
+
+#slider .slider-contents {
+  width: 80%;
+  height: 100%;
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.slider-contents ul {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 28px;
+  padding-bottom: 5px;
+  border-bottom: solid 1.5px #000000de;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#slider ul li a {
+  display: block;
+  color: #000000de;
+}
+
+#slider ul li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: solid 2px #000000de;
+  border-top: solid 2px #000000de;
+  transform: rotate(45deg) translateY(-70%);
+}
+
+#slider .slider-margin {
+  display: block;
+  width: 20%;
+  background-color: #000;
+  opacity: .62;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background: #5e17eb;
+  z-index: 10;
+}
+
+/* menu */
+#menu-btn-check {
+  display: none;
+}
+.menu-btn {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  transition: .1s;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
 /* sidebar */
 .sidebar {
   position: fixed;

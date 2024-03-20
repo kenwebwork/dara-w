@@ -11,6 +11,26 @@
 <!-- 問題のやじるし直す -->
 
 <body>
+  <header>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn" onclick="openCloseSlider()"><span></span></label>
+    </div>
+    <div>logo</div>
+  </header>
+  <div id="slider" class="unshown">
+    <nav class="slider-contents">
+      <ul>
+        <li><a href="#">ロードマップ</a></li>
+        <li><a href="#">レッスン一覧</a></li>
+        <li><a href="#">ああああ</a></li>
+        <li><a href="#">ああああ</a></li>
+        <li><a href="#">ああああ</a></li>
+      </ul>
+    </nav>
+    <label class="slider-margin" for="menu-btn-check" onclick="openCloseSlider()"></label>
+  </div>
+  <!-- main content -->
   <div class="container">
     <!-- sidebar -->
     <div class="sidebar">
