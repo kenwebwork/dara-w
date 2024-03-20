@@ -1,0 +1,84 @@
+ul#lesson-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#lesson-lists .lessons {
+  width: 48%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.lessons {
+  border-radius: 20px;
+  background-color: #edf0ff;
+  width: 100%;
+}
+
+.lessons h3 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #5e17eb;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+#lesson-lists .lessons ul {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 18px 10px 24px;
+  color: #777;
+}
+#lesson-lists .lessons ul li {
+  width: calc(100% - 40px);
+  margin-bottom: 20px;
+  list-style: disc;
+  font-weight: bold;
+  transition: .1s;
+}
+#lesson-lists .lessons ul li:hover {
+  color: #000000de;
+}
+#lesson-lists .lessons ul li a {
+  display: block;
+  color: #777;
+  font-size: 1.3rem;
+}
+#lesson-lists .lessons ul li a:hover {
+  color: #000000de;
+}
+
+
+/* Tab and Mobile */
+@media screen and (max-width: 834px) {
+  
+}
+@media screen and (max-width: 650px) {
+  ul#lesson-lists {
+    justify-content: center;
+  }
+  
+  #lesson-lists .lessons {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #lesson-lists .lessons ul li {
+    margin-bottom: 12px;
+  }
+
+  #lesson-lists li.lessons:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  
+}

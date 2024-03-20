@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/reset.css">
+  <link rel="stylesheet" href="public/public.css">
+  <link rel="stylesheet" href="parent.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn" onclick="openCloseSlider()"><span></span></label>
+    </div>
+    <div>logo</div>
+  </header>
+  <div id="slider" class="unshown">
+    <nav class="slider-contents">
+      <ul>
+        <li><a href="#">ロードマップ</a></li>
+        <li><a href="#">レッスン一覧</a></li>
+        <li><a href="#">ああああ</a></li>
+        <li><a href="#">ああああ</a></li>
+        <li><a href="#">ああああ</a></li>
+      </ul>
+    </nav>
+    <label class="slider-margin" for="menu-btn-check" onclick="openCloseSlider()"></label>
+  </div>
+  <!-- main content -->
+  <div class="container">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="logo">logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">ロードマップ</a></li>
+          <li><a href="#">レッスン一覧</a></li>
+          <li><a href="#">記事一覧</a></li>
+          <li><a href="#">サイトの使い方</a></li>
+          <li><a href="#">その他</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main area -->
+    <div class="main-area">
+      <div class="top-area">
+        <div class="title-card">
+          <h1>レッスン一覧</h1>
+        </div>
+      </div>
+      <div class="content">
+        <ul id="lesson-lists">
+          <li class="lessons">
+            <h3>文型</h3>
+            <ul>
+              <li><a href="#">SVO</a></li>
+              <li><a href="#">SVC</a></li>
+              <li><a href="#">SVOO</a></li>
+              <li><a href="#">SVOC</a></li>
+            </ul>
+          </li>
+          <li class="lessons">
+            <h3>前置詞</h3>
+            <ul>
+              <li><a href="#">at</a></li>
+              <li><a href="#">by</a></li>
+              <li><a href="#">in</a></li>
+              <li><a href="#">with</a></li>
+            </ul>
+          </li>
+          <li class="lessons">
+            <h3>接続詞</h3>
+            <ul>
+              <li><a href="#">though と although</a></li>
+              <li><a href="#">before と after</a></li>
+              <li><a href="#">when</a></li>
+              <li><a href="#">while</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <nav>
+          <ul class="site-nav">
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+          <ul class="social-nav">
+            <li><a href="#">X (twitter)</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Line</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </div>
+  <script src="lesson.js"></script>
+</body>
+</html>

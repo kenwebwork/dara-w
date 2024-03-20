@@ -1,0 +1,18 @@
+.lesson-list {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.lesson-list li {
+  color: #777;
+}
+.lesson-list a {
+  display: block;
+  margin-bottom: 25px;
+  color: #777;
+  transition: .2s;
+}
+.lesson-list li:hover,
+.lesson-list li a:hover {
+  color: #000000de;
+}
