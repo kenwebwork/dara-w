@@ -20,6 +20,7 @@ ul#lesson-lists {
 }
 
 .lessons h3 {
+  position: relative;
   display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
@@ -29,6 +30,21 @@ ul#lesson-lists {
   font-weight: bold;
   font-size: 1.3rem;
   color: #fff;
+}
+
+.lessons h3 a {
+  color: #fff;
+}
+
+.lessons h3 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 2;
 }
 
 #lesson-lists .lessons ul {

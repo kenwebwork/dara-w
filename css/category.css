@@ -5,12 +5,13 @@
 
 .lesson-list li {
   color: #777;
+  transition: .15s;
 }
 .lesson-list a {
   display: block;
   margin-bottom: 25px;
   color: #777;
-  transition: .2s;
+  transition: .15s;
 }
 .lesson-list li:hover,
 .lesson-list li a:hover {
