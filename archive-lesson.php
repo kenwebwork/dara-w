@@ -27,11 +27,14 @@
                 <h3><a href="<?php echo get_term_link($term)?>"><?php echo $term->name ?></a></h3>
                 <ul class="lesson-list">
                   <?php
+                    $term_slug = $term->slug;
                     $wp_query = new WP_Query();
                     $my_posts = array(
                       'post_type' => 'lesson',
                       'posts_per_page' => '4',
-
+                      'order' => 'ASC',
+                      'taxonomy' => 'lesson_category',
+                      'term' => $term_slug
                     );
 
                     $wp_query->query($my_posts);
