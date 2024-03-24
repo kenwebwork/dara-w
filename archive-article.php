@@ -16,12 +16,12 @@
       <?php if(have_posts()): ?>
         <div class="top-area">
           <div class="title-card">
-            <h1>レッスン 一覧</h1>
+            <h1>記事 一覧</h1>
           </div>
         </div>
         <div class="content">
           <ul id="lesson-lists">
-            <?php $terms = get_terms('lesson_category','hide_empty=0'); ?>
+            <?php $terms = get_terms('article_category','hide_empty=0'); ?>
             <?php foreach ( $terms as $term ): ?>
               <li class="lessons">
                 <h3><a href="<?php echo get_term_link($term)?>"><?php echo $term->name ?></a></h3>
@@ -30,10 +30,10 @@
                     $term_slug = $term->slug;
                     $wp_query = new WP_Query();
                     $my_posts = array(
-                      'post_type' => 'lesson',
+                      'post_type' => 'article',
                       'posts_per_page' => '5',
                       'order' => 'ASC',
-                      'taxonomy' => 'lesson_category',
+                      'taxonomy' => 'article_category',
                       'term' => $term_slug
                     );
                     $wp_query->query($my_posts);

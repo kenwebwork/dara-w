@@ -85,7 +85,32 @@
       <div class="practice-area content">
         <h2 id="practice-title">練習</h2>
         <p>それでは練習をしましょう。目安は10回繰り返すことです！</p>
+        
         <div class="qa-container">
+          
+          <div id="qa"></div>
+
+          <!-- script start -->
+          <script>
+            const list = [
+              {ja: "これはぺんです。", en: "This is a pen."},
+              {ja: "あなたは犬です。", en: "You are a dog."},
+              {ja: "彼はトムです。", en: "He is Tom."},
+              {ja: "彼女はマイです。", en: "She is Mai."}
+            ];
+            const qa = document.getElementById('qa');
+            for (let i = 0; i < list.length; i++) {
+            qa.innerHTML += `
+              <div class="qa-box">
+              <input id="q-${i}" class="qa-checkbox" type="checkbox" />
+                <label for="q-${i}"><span>${i}.</span>${list[i]["ja"]}</label>
+                <div class="en">${list[i]["en"]}</div>
+              </div>
+              `;
+            }
+          </script>
+          <!-- script end -->
+
           <div class="qa-box">
             <input id="q-1" class="qa-checkbox" type="checkbox" />
               <label for="q-1"><span>1.</span>これはペンです。</label>

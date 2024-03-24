@@ -80,6 +80,7 @@
   line-height: 1.3em;
   cursor: pointer;
 }
+
 .qa-box label span {
   position: absolute;
   top: 50%;
@@ -115,6 +116,20 @@
   opacity: 0;
   transition: .15s;
   line-height: 1.3em;
+}
+
+.qa-box:nth-child(n+10) label {
+  margin-left: 30px;
+  width: calc(100% - 25px - 25px);
+}
+
+.qa-box:nth-child(n+10) span {
+  left: -35px;
+}
+
+.qa-box:nth-child(n+10) .en {
+  margin-left: 30px;
+  width: calc(100% - 25px - 25px);
 }
 
 .qa-checkbox:checked ~ .en {

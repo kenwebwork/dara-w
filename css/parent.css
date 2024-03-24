@@ -1,6 +1,7 @@
 ul#lesson-lists {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0;
 }
@@ -55,13 +56,25 @@ ul#lesson-lists {
 }
 #lesson-lists .lessons ul li {
   width: calc(100% - 40px);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   list-style: disc;
   font-weight: bold;
   transition: .1s;
 }
+#lesson-lists .lessons ul li a {
+  margin-bottom: 0;
+}
 #lesson-lists .lessons ul li:hover {
   color: #000000de;
+}
+#lesson-lists .lessons ul li.no-dot {
+  list-style: none;
+}
+#lesson-lists .lessons ul li.no-dot a {
+  color: #5e17ebaa;
+}
+#lesson-lists .lessons ul li.no-dot a:hover {
+  color: #5e17ebff;
 }
 #lesson-lists .lessons ul li a {
   display: block;
