@@ -13,13 +13,13 @@
     <?php get_sidebar(); ?>
     <!-- main area -->
     <div class="main-area">
-      <?php if(have_posts()): ?>
-        <div class="top-area">
-          <div class="title-card">
-            <h1>レッスン 一覧</h1>
-          </div>
+      <div class="top-area">
+        <div class="title-card">
+          <h1>レッスン 一覧</h1>
         </div>
-        <div class="content">
+      </div>
+      <div class="content">
+        <?php if(have_posts()): ?>
           <ul id="lesson-lists">
             <?php $terms = get_terms('lesson_category','hide_empty=0'); ?>
             <?php foreach ( $terms as $term ): ?>
@@ -57,12 +57,11 @@
               </li>
             <?php endforeach ?>
           </ul>
-        </div>
-      <?php else: ?>
-        <div class="content">
+        <?php else: ?>
           <p>現在準備中です。</p>
-        </div>
-      <?php endif; ?>
+        <?php endif; ?>
+        <?php get_footer(); ?>
+      </div>
     </div>
   </div>
   <script src="<?php echo get_template_directory_uri(); ?>/lesson.js"></script>

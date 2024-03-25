@@ -3,7 +3,7 @@
 }
 
 .title-card .basic-button-outer {
-  margin: 25px 0;
+  margin-top: 25px;
   display: block;
 }
 
@@ -19,23 +19,6 @@
   opacity: 0;
   padding: 0;
   margin: 0;
-}
-
-.description-area .en-example {
-  margin: 30px 0;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 30px;
-  font-weight: bold;
-}
-.description-area .en-example p {
-  margin-bottom: 0;
-}
-
-.description-area .en-example p.ja{
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: solid 1px #000000de;
 }
 
 .close-button-outer {

@@ -180,8 +180,6 @@ header .logo img {
   border-radius: 10px;
   padding: 0 10px;
   z-index: 10;
-  background-color: #5e17eb;
-  background-color: #edf0ff;
   background-color: #fff;
 }
 
@@ -244,6 +242,7 @@ header .logo img {
 .top-area .title-card {
   position: relative;
   margin-left: 10%;
+  margin-bottom: 30px;
   display: inline-block;
   height: auto;
   border-radius: 20px;
@@ -265,12 +264,19 @@ header .logo img {
   min-height: 80vh;
 }
 
-.content h2 {
-  position: relative;
+.content h2,
+.content h3 {
   margin-bottom: 30px;
-  font-size: 1.8rem;
   font-weight: bold;
-  z-index: 1;
+}
+
+.content h2 {
+  font-size: 1.6rem;
+}
+
+.content h3 {
+  margin-top: 50px;
+  font-size: 1.4em;
 }
 
 .content p {
@@ -295,6 +301,22 @@ header .logo img {
   margin: 30px auto;
   width: 80%;
   object-fit: contain;
+}
+
+.en-example {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.en-example p {
+  margin-bottom: 0;
+}
+.en-example p.ja{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: solid 1px #000000de;
 }
 
 /* footer */

@@ -33,9 +33,7 @@
           </li>
         </ul>
       </div>
-      <footer>
-        <?php get_footer(); ?>
-      </footer>
+      <?php get_footer(); ?>
     </div>
   </div>
   <?php  wp_footer(); ?>
