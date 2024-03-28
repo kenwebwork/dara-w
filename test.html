@@ -1,0 +1,94 @@
+<div class="description-area content unshown" id="description-area">
+
+  <!-- wp:heading -->
+  <h2 class="wp-block-heading">解説</h2>
+  <!-- /wp:heading -->
+  
+  <!-- wp:paragraph -->
+  <p>ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。ここに解説が入ります。</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:paragraph -->
+  <p>ごりら<br>ごりれ</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:paragraph -->
+  <p>this is a pen.</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:html -->
+  <div class="en-example">
+    <p>This is a pen.</p>
+  </div>
+  <div class="en-example">
+    <p class="en">This is a pen.</p>
+    <p class="ja">これはペンです。</p>
+  </div>
+  <!-- /wp:html -->
+  
+  <!-- wp:html -->
+  <ul>
+    <li>hoge</li>
+    <li>ほげ</li>
+    <li>hoge</li>
+    <li>ほげ</li>
+  </ul>
+  <!-- /wp:html -->
+  
+  <!-- wp:html -->
+  <div class="basic-button-outer close-button-outer">
+    <div class="basic-button grad-button" onclick="openCloseDesc()">解説を閉じる</div>
+  </div>
+  <!-- /wp:html -->
+  
+  </div>
+  <div class="practice-area content">
+  
+  <!-- wp:heading -->
+  <h2 class="wp-block-heading" id="practice-title">練習</h2>
+  <!-- /wp:heading -->
+  
+  <!-- wp:paragraph -->
+  <p>それでは練習をしましょう。目安は10回繰り返すことです！</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:html -->
+  <div class="qa-container">
+    <div id="qa"></div>
+  </div>
+  
+  <script>
+    list = [
+      {ja: "これはぺんです。", en: "This is a pen."},
+      {ja: "あなたは犬です。", en: "You are a dog."},
+      {ja: "彼はトムです。", en: "He is Tom."},
+      {ja: "彼女はマイです。", en: "She is Mai."},
+      {ja: "彼女はマイです。", en: "She is Mai."},
+      {ja: "彼女はマイです。", en: "She is Mai."},
+      {ja: "彼女はマイです。", en: "She is Mai."},
+      {ja: "彼女はマイです。", en: "She is Mai."},
+      {ja: "彼女はマイです。", en: "She is Mai."},
+      {ja: "彼女はマイです。", en: "She is Mai."}
+    ];  
+  </script>
+  <!-- /wp:html -->
+  
+  <script>
+   const qa = document.getElementById('qa');<br />
+    for (let i = 0; i < list.length; i++) {
+      qa.innerHTML += `
+  　　　<div class="qa-box">
+          <input id="q-${i}" class="qa-checkbox" type="checkbox" /><br />
+          <label for="q-${i}"><span>${i+1}.</span>${list[i]["ja"]}</label></p>
+  　　　　<div class="en">${list[i]["en"]}</div>
+  　　　</div>`;
+    }
+  </script>
+  
+  <!-- wp:html -->
+  <div class="basic-button-outer">
+    <div class="basic-button grad-button" id="againButton" onclick="praticeAgain()">もう一度練習！<span id="practiceCounter">あと <span id="practiceCounterNumber">9</span> 回</span></div>
+  </div>
+  <!-- /wp:html -->
+  
+  </div>

@@ -27,8 +27,6 @@
       <?php endwhile; ?>
     <?php endif; ?>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/lesson.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/public/public.js"></script>
   <?php  wp_footer(); ?>
 </body>
 </html>

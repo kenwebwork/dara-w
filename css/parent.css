@@ -3,13 +3,16 @@ ul#lesson-lists {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  min-height: 50vh;
+  height: auto;
   margin: 0;
 }
 
 #lesson-lists .lessons {
   width: 48%;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 5px;
+  margin-bottom: 20px;
+  min-height: 200px;
   padding: 0;
   list-style: none;
 }
@@ -20,11 +23,11 @@ ul#lesson-lists {
   width: 100%;
 }
 
-.lessons h3 {
+.content .lessons h3 {
   position: relative;
   display: inline-block;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px;
+  margin-bottom: 0;
   padding: 8px 20px;
   border-radius: 20px;
   background-color: #5e17eb;
@@ -58,6 +61,7 @@ ul#lesson-lists {
   width: calc(100% - 40px);
   margin-bottom: 15px;
   list-style: disc;
+  line-height: 1.45rem;
   font-weight: bold;
   transition: .1s;
 }
@@ -79,7 +83,7 @@ ul#lesson-lists {
 #lesson-lists .lessons ul li a {
   display: block;
   color: #777;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 #lesson-lists .lessons ul li a:hover {
   color: #000000de;

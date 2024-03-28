@@ -15,6 +15,17 @@ function openCloseDesc() {
   });
 }
 
+const qa = document.getElementById('qa');
+for (let i = 0; i < list.length; i++) {
+  qa.innerHTML += `
+　　<div class="qa-box">
+        <input id="q-${i}" class="qa-checkbox" type="checkbox" />
+        <label for="q-${i}"><span>${i+1}.</span>${list[i]["ja"]}</label>
+      <div class="en">${list[i]["en"]}</div>
+    </div>
+  `;
+}
+
 function praticeAgain() {
   const qaCheckbox = document.getElementsByClassName("qa-checkbox");
   for(let i=0; i<qaCheckbox.length; i++){

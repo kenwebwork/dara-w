@@ -10,7 +10,7 @@
   <div class="container">
     <?php get_sidebar(); ?>
     <div class="main-area">
-        <?php while(have_posts()): the_post(); ?>
+      <?php while(have_posts()): the_post(); ?>
         <div class="top-area">
           <div class="title-card">
             <h1><?php the_title(); ?></h1>
@@ -19,11 +19,10 @@
         <div class="content article">
           <?php the_content(); ?>
         </div>
-        <?php endwhile; ?>
-        <?php get_footer(); ?>
+      <?php endwhile; ?>
+      <?php get_footer(); ?>
     </div>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/public/public.js"></script>
-  <?php  wp_footer(); ?>
+  <?php wp_footer(); ?>
 </body>
 </html>

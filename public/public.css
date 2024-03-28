@@ -1,3 +1,12 @@
+/* 
+lightblue edf0ff
+blue 5e17eb
+
+lightgreen edfff2
+green 43BB64
+
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
 body {
@@ -265,8 +274,12 @@ header .logo img {
 }
 
 .content h2,
-.content h3 {
+.content h3,
+.content h4 {
   margin-bottom: 30px;
+}
+.content h2,
+.content h3 {
   font-weight: bold;
 }
 
@@ -403,5 +416,11 @@ footer .social-nav {
 
   footer ul.site-nav {
     margin: 10px 10px 20px;
+  }
+}
+
+@media screen and (max-height: 490px) {
+  .sidebar .logo {
+    display: none;
   }
 }
