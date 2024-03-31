@@ -12,9 +12,9 @@
     <!-- sidebar -->
     <?php get_sidebar(); ?>
     <!-- main area -->
-    <?php if(have_posts()): ?>
-      <?php while(have_posts()): the_post(); ?>
-        <div class="main-area">
+    <div class="main-area">
+      <?php if(have_posts()): ?>
+        <?php while(have_posts()): the_post(); ?>
           <div class="top-area">
             <div class="title-card">
               <h1><?php the_title(); ?></h1>
@@ -23,9 +23,10 @@
           <div class="content">
             <?php the_content(); ?>
           </div>
-        </div>
-      <?php endwhile; ?>
-    <?php endif; ?>
+        <?php endwhile; ?>
+      <?php endif; ?>  
+      <?php get_footer(); ?>
+    </div>
   </div>
   <?php  wp_footer(); ?>
 </body>

@@ -21,10 +21,9 @@
         </div>
         <?php the_content(); ?>
       <?php endwhile; ?>
+      <?php get_footer(); ?>
     </div>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/public/public.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/lesson.js"></script>
   <?php  wp_footer(); ?>
 </body>
 </html>

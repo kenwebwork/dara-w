@@ -27,10 +27,10 @@ Template Name: Roadmap
         <div class="roadmap-left">
           <div class="top-buttons">
             <div class="basic-button-outer">
-              <a class="basic-button grad-button grad-green" href="#">このサイトの使い方</a>
+              <a class="basic-button grad-button grad-green" href="<?php echo esc_url('/about') ?>">daraEnglish とは</a>
             </div>
             <div class="basic-button-outer">
-              <a class="basic-button grad-button grad-green" href="#">英語力の伸び方</a>
+              <a class="basic-button grad-button grad-green" href="<?php echo esc_url('/about#how-to-use-this-site') ?>">このサイトの使い方</a>
             </div>
           </div>
         </div>
@@ -44,13 +44,13 @@ Template Name: Roadmap
         <a href="<?php echo esc_url('#step1') ?>">Step 1</a>
         <a href="<?php echo esc_url('#step2') ?>">Step 2</a>
         <a href="<?php echo esc_url('#step3') ?>">Step 3</a>
-        <a href="#">Step 4</a>
-        <a href="#">Step 5</a>
+        <a href="<?php echo esc_url('#step4') ?>">Step 4</a>
+        <a href="<?php echo esc_url('#step5') ?>">Step 5</a>
       </div>
       <div class="content article">
         <ul id="lesson-lists">
           <li class="lessons">
-            <h3 id="step0"><a href="<?php echo esc_url('/') ?>">Step 0</a></h3>
+            <h3 id="step0"><a href="<?php echo esc_url('/') ?>">Step 0 - 始めてみよう！</a></h3>
             <ul class="lesson-list">
               <li><a href="<?php echo esc_url('/') ?>">このサイトの使い方</a></li>
               <li><a href="<?php echo esc_url('/') ?>">How are you? の使い方</a></li>

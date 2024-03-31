@@ -60,8 +60,8 @@
         <?php else: ?>
           <p>現在準備中です。</p>
         <?php endif; ?>
-        <?php get_footer(); ?>
       </div>
+      <?php get_footer(); ?>
     </div>
   </div>
   <?php  wp_footer(); ?>

@@ -128,6 +128,7 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 90;
+  cursor: pointer;
 }
 .menu-btn span,
 .menu-btn span:before,
@@ -286,6 +287,9 @@ header .logo img {
 .content h2 {
   font-size: 1.6rem;
 }
+.content h2:not(:first-of-type) {
+  margin-top: 50px;
+}
 
 .content h3 {
   margin-top: 50px;
@@ -293,9 +297,9 @@ header .logo img {
 }
 
 .content p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8rem;
-  margin-bottom: 12px;
+  margin-bottom: 26px;
 }
 
 .content ul {
@@ -316,12 +320,46 @@ header .logo img {
   object-fit: contain;
 }
 
+.content strong {
+  font-weight: bold;
+}
+
+.content .blue-highlight {
+  background:linear-gradient(transparent 60%, #99d8fc 60%);
+}
+
+.content a.basic-button.blue {
+  margin-bottom: 50px;
+  background-color: #5e17eb;
+  color: #fff;
+}
+
+.content textarea {
+  width: 100%;
+}
+
+.submit-button-outer input{
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  padding: 6px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color: #5e17eb;
+  color: #fff;
+  cursor: pointer;
+}
+
 .en-example {
   margin: 30px 0;
   padding: 20px;
   background-color: #fff;
   border-radius: 30px;
   font-weight: bold;
+}
+.en-example.blue {
+  background-color: #edf0ff;
 }
 .en-example p {
   margin-bottom: 0;
@@ -337,16 +375,22 @@ footer {
   padding: 30px 30px 0;
 }
 
-footer ul {
+footer .site-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
   list-style: none;
 }
-footer ul li:not(:last-child) {
+
+footer nav .site-nav li {
   display: inline-block;
-  margin-right: 10px;
-  padding-right: 10px;
+  margin: 0;
+}
+
+footer nav .site-nav li:not(:last-child) {
+  margin-right: 12px;
+  padding-right: 12px;
   border-right: solid 1px #000000cf;
 }
 
@@ -355,12 +399,10 @@ footer ul li a {
   font-size: .9rem;
 }
 
-footer .site-nav {
-  margin: 20px;
-}
-
-footer .social-nav {
+footer .copyright {
   margin-bottom: 20px;
+  text-align: center;
+  font-size: .9rem;
 }
 
 /* Tab and Mobile */

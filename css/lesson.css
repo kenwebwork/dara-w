@@ -29,6 +29,16 @@
   background: linear-gradient(to right, #5170ff, #ff66c4);
 }
 
+.description-area ul {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+.description-area strong {
+  font-weight: bold;
+}
+
 /* practice area */
 .qa-container {
   margin-bottom: 45px;

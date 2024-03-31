@@ -33,6 +33,7 @@
 }
 
 .jump-area {
+  margin-left: 25px;
   font-size: 1.1rem;
   line-height: 1.6rem;
   margin-top: 10px;
@@ -100,5 +101,16 @@ ul#lesson-lists {
 
   .roadmap_top div img {
     display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  
+  .roadmap-right {
+    margin-bottom: 20px;
+  }
+
+  .jump-area {
+    padding: 0;
   }
 }

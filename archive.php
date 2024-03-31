@@ -19,7 +19,7 @@
             <h1><?php single_cat_title(); ?> 一覧</h1>
           </div>
         </div>
-        <div class="content">
+        <div class="content content-blue">
           <ul class="lesson-list">
             <?php while(have_posts()): the_post(); ?>
               <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>  
@@ -31,10 +31,9 @@
           <p>現在準備中です。</p>
         </div>
       <?php endif; ?>
+      <?php get_footer(); ?>
     </div>
   </div>
-  <script src="<?php echo get_template_directory_uri(); ?>/lesson.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/public/public.js"></script>
   <?php  wp_footer(); ?>
 </body>
 </html>
