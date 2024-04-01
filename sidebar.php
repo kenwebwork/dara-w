@@ -5,12 +5,6 @@
     </a>
   </div>
   <nav>
-    <ul>
-      <li><a href="<?php echo esc_url('/'); ?>">ロードマップ</a></li>
-      <li><a href="<?php echo esc_url('/lesson'); ?>">レッスン一覧</a></li>
-      <li><a href="<?php echo esc_url('/article'); ?>">記事一覧</a></li>
-      <li><a href="#">サイトの使い方</a></li>
-      <li><a href="#">その他</a></li>
-    </ul>
+    <?php get_template_part("includes/menu-nav"); ?>
   </nav>
 </div>

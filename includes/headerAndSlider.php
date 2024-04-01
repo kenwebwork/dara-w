@@ -13,13 +13,7 @@
 </header>
 <div id="slider" class="unshown">
   <nav class="slider-contents">
-    <ul>
-      <li><a href="<?php echo esc_url('/'); ?>">ロードマップ</a></li>
-      <li><a href="<?php echo esc_url('/lesson'); ?>">レッスン一覧</a></li>
-      <li><a href="<?php echo esc_url('/article'); ?>">記事一覧</a></li>
-      <li><a href="#">ああああ</a></li>
-      <li><a href="#">ああああ</a></li>
-    </ul>
+    <?php get_template_part("includes/menu-nav"); ?>
   </nav>
   <label class="slider-margin" for="menu-btn-check" onclick="openCloseSlider()"></label>
 </div>

@@ -14,4 +14,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/public/public.js"></script>
 <?php if (is_singular('lesson')): ?>
   <script src="<?php echo get_template_directory_uri(); ?>/js/lesson.js"></script>
+<?php elseif (is_front_page()): ?>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/roadmap.js"></script>
 <?php endif; ?>

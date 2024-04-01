@@ -48,55 +48,55 @@ Template Name: Roadmap
         <a href="<?php echo esc_url('#step5') ?>">Step 5</a>
       </div>
       <div class="content article">
+        <a id="to-top">TOP</a>
         <ul id="lesson-lists">
           <li class="lessons">
-            <h3 id="step0"><a href="<?php echo esc_url('/') ?>">Step 0 - 始めてみよう！</a></h3>
+            <h3 id="step0">Step 0 - 始めてみよう！</h3>
             <ul class="lesson-list">
-              <li><a href="<?php echo esc_url('/') ?>">このサイトの使い方</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">How are you? の使い方</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">英語力の伸び方</a></li>
+              <li><a href="<?php echo esc_url('/about#how-to-use-this-site') ?>">このサイトの使い方</a></li>
+              <li><a href="<?php echo esc_url('/') ?>">☆How are you? の使い方</a></li>
+              <li><a href="<?php echo esc_url('/') ?>">☆英語力の伸び方</a></li>
             </ul>
           </li>
           <li class="lessons">
             <h3 id="step1">Step 1 - 文型</h3>
             <ul class="lesson-list">
-              <li><a href="<?php echo esc_url('/') ?>">SVC</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">SVO</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">SVOO</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">SVOC</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">SVOC2</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">SV</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">You know, I mean, like</a></li>
+              <li><a href="<?php echo esc_url('/svc') ?>">SVC</a></li>
+              <li><a href="<?php echo esc_url('/svo') ?>">SVO</a></li>
+              <li><a href="<?php echo esc_url('/svoo') ?>">SVOO</a></li>
+              <li><a href="<?php echo esc_url('/svoc') ?>">SVOC</a></li>
+              <li><a href="<?php echo esc_url('/sv') ?>">SV</a></li>
+              <li><a href="<?php echo esc_url('/') ?>">☆You know, I mean, like</a></li>
             </ul>
           </li>
           <li class="lessons">
             <h3 id="step2">Step 2 - 時制</h3>
             <h4>Step 2-1</h4>
             <ul class="lesson-list">
-              <li><a href="<?php echo esc_url('/') ?>">現在進行形（I am doing）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">現在進行形と現在形（I'm doing and I do）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">現在進行形と現在形（I'm doing and I do）2</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">過去形（I did）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">過去形とその進行形（I did and I was doing）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">過去形の意外な性質</a></li>
+              <li><a href="<?php echo esc_url('/iamdoing') ?>">現在進行形（I am doing）</a></li>
+              <li><a href="<?php echo esc_url('/iamdoing-and-ido') ?>">現在進行形と現在形（I'm doing and I do）</a></li>
+              <li><a href="<?php echo esc_url('/iamdoing-and-ido2') ?>">現在進行形と現在形（I'm doing and I do）2</a></li>
+              <li><a href="<?php echo esc_url('/idid') ?>">過去形（I did）</a></li>
+              <li><a href="<?php echo esc_url('/idid-and-iwasdoing') ?>">過去形とその進行形（I did and I was doing）</a></li>
+              <li><a href="<?php echo esc_url('/properties-of-past-tence') ?>">[Article] 過去形の意外な性質</a></li>
             </ul>
             <h4>Step 2-2</h4>
             <ul class="lesson-list">
-              <li><a href="<?php echo esc_url('/') ?>">現在完了形（I have done）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">現在完了進行形（I have been doing）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">現在完了形と現在完了進行形（I have done, I have been doing）</a></li>
+              <li><a href="<?php echo esc_url('/ihavedone') ?>">現在完了形（I have done）</a></li>
+              <li><a href="<?php echo esc_url('/ihavebeendoing') ?>">現在完了進行形（I have been doing）</a></li>
+              <li><a href="<?php echo esc_url('/ihavebeendoing-and-ihavedone') ?>">現在完了形と現在完了進行形（I have done, I have been doing）</a></li>
             </ul>
             <h4>Step 2-3</h4>
             <ul class="lesson-list">
-              <li><a href="<?php echo esc_url('/') ?>">現在完了形と過去形（I have done, I did）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">過去完了形（I had done）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">過去完了進行形（I had been doing）</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">have and have got</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">used to</a></li>
+              <li><a href="<?php echo esc_url('/ihavedone-and-idid') ?>">☆practice現在完了形と過去形（I have done, I did）</a></li>
+              <li><a href="<?php echo esc_url('/ihaddone') ?>">過去完了形（I had done）</a></li>
+              <li><a href="<?php echo esc_url('/') ?>">☆過去完了進行形（I had been doing）</a></li>
+              <li><a href="<?php echo esc_url('/have-and-havegot') ?>">[Article] have and have got</a></li>
+              <li><a href="<?php echo esc_url('/usedto') ?>">used to</a></li>
             </ul>
             <h4>Step 2-4</h4>
             <ul class="lesson-list">
-              <li><a href="<?php echo esc_url('/') ?>">未来を意味する現在形</a></li>
+              <li><a href="<?php echo esc_url('/') ?>">[Article] 未来を意味する現在形</a></li>
               <li><a href="<?php echo esc_url('/') ?>">Will and shall</a></li>
               <li><a href="<?php echo esc_url('/') ?>">Will と be going to</a></li>
               <li><a href="<?php echo esc_url('/') ?>">will be doing and will have done</a></li>

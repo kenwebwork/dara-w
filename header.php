@@ -18,5 +18,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/roadmap.css">
   <?php endif ?>
 <script src="//code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<title>Document</title>
-<?php  wp_head(); ?>
+
+<title><?php wp_title('|', true, 'right'); bloginfo('name');?></title>
+<?php wp_head(); ?>
