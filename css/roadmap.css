@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
 
 #to-top {
   position: fixed;
   right: 30px;
   bottom: 30px;
   font-size: 1.3rem;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
+  font-family: "Kosugi", sans-serif;
+  font-weight: bold;
   font-style: normal;
   color: #777;
   cursor: pointer;

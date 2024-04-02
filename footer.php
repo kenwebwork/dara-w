@@ -1,13 +1,11 @@
 <footer>
-  <?php if (!is_singular('lesson')): ?>
-    <nav>
-      <ul class="site-nav">
-        <li><a href="<?php echo esc_url('/about'); ?>">daraEnglish とは</a></li>
-        <li><a href="<?php echo esc_url('/contact'); ?>">お問い合わせ</a></li>
-        <li><a href="<?php echo esc_url('/privacy-policy'); ?>">プライバシーポリシー</a></li>
-      </ul>
-    </nav>
-  <?php endif; ?>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="<?php echo esc_url('/about'); ?>">daraEnglish とは</a></li>
+      <li><a href="<?php echo esc_url('/contact'); ?>">お問い合わせ</a></li>
+      <li><a href="<?php echo esc_url('/privacy-policy'); ?>">プライバシーポリシー</a></li>
+    </ul>
+  </nav>
   <p class="copyright">Copyright &copy; daraEnglish 2024</p>
 </footer>
   

@@ -216,6 +216,7 @@
   .title-card .basic-button-outer {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .other-lessons-area {
