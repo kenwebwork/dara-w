@@ -19,6 +19,19 @@
         <div class="content article">
           <?php the_content(); ?>
         </div>
+        <?php $terms = get_the_terms($post->ID, 'article_category'); ?>
+        <?php if($terms): ?>
+          <?php foreach($terms as $term): ?>
+            <?php if(str_contains($term->slug, 'step')): 
+              $step_num = $term->slug;
+              $dir = get_template_part('includes/steps/'.$step_num);
+            ?>
+              <?php if($dir): ?>
+                <?php $dir; ?>
+              <?php endif; ?>
+            <?php endif; ?>
+          <?php endforeach; ?>
+        <?php endif; ?>
       <?php endwhile; ?>
       <?php get_footer(); ?>
     </div>

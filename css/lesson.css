@@ -139,6 +139,53 @@
   font-weight: bold;
 }
 
+#other-lessons {
+  position: relative;
+  background-color: #edf0ff;
+  margin: 60px 10% 0;
+  padding: 60px 30px 20px;
+  border-radius: 30px;
+}
+
+#other-lessons h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #5e17eb;
+}
+
+#other-lessons h4 {
+  border-left: solid 2px #5e17eb;
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+#other-lessons h4:not(:first-of-type) {
+  margin-top: 25px;
+}
+
+#other-lessons li a.we-are-here {
+  color: #000000de;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#other-lessons ul li {
+  margin-bottom: 8px;
+}
+
+#other-lessons ul li a {
+  color: #777;
+  transition: .1s;
+}
+#other-lessons ul li a:hover {
+  color: #000000de;
+}
 
 
 /* Tab and Mobile */
@@ -153,5 +200,9 @@
   .title-card .basic-button-outer {
     display: flex;
     justify-content: center;
+  }
+
+  #other-lessons {
+    margin: 60px 15px 0;
   }
 }

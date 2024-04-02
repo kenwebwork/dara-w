@@ -23,6 +23,10 @@
           <ul id="lesson-lists">
             <?php $terms = get_terms('lesson_category','hide_empty=0'); ?>
             <?php foreach ( $terms as $term ): ?>
+              <?php 
+                $term_slug = $term->slug;
+                if(str_contains($term_slug, 'step')){continue;}
+              ?>
               <li class="lessons">
                 <h3><a href="<?php echo get_term_link($term)?>"><?php echo $term->name ?></a></h3>
                 <ul class="lesson-list">

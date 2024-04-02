@@ -20,14 +20,18 @@
           </div>
         </div>
         <?php the_content(); ?>
-        <!-- <?php $terms = get_the_terms($post->ID, 'lesson_category'); ?>
-          <?php if($terms): ?>
-            <?php foreach($terms as $term): ?>
-              <?php if(str_contains($term->slug, 'step')): ?>
-                <p><?php echo $term->slug; ?></p>
-              <?php endif; ?>
-            <?php endforeach; ?>
-          <?php endif; ?> -->
+        <?php $terms = get_the_terms($post->ID, 'lesson_category'); ?>
+        <?php if($terms): ?>
+          <?php foreach($terms as $term): ?>
+            <?php if(str_contains($term->slug, 'step')): ?>
+              <div class="other-lessons-outer">
+                <div id="other-lessons">
+                  <?php get_template_part('includes/steps/'.$term->slug); ?>
+                </div>
+              </div>
+            <?php endif; ?>
+          <?php endforeach; ?>
+        <?php endif; ?>
       <?php endwhile; ?>
       <?php get_footer(); ?>
     </div>
