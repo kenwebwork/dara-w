@@ -24,9 +24,13 @@
         <?php if($terms): ?>
           <?php foreach($terms as $term): ?>
             <?php if(str_contains($term->slug, 'step')): ?>
-              <div class="other-lessons-outer">
+              <div class="other-lessons-area">
+                <h2>このレッスンはロードマップに含まれています</h2>
                 <div id="other-lessons">
                   <?php get_template_part('includes/steps/'.$term->slug); ?>
+                </div>
+                <div class="basic-button-outer">
+                  <a class="basic-button grad-button" href="<?php echo esc_url('/'); ?>">ロードマップ</a>
                 </div>
               </div>
             <?php endif; ?>

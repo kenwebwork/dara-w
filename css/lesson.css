@@ -139,10 +139,26 @@
   font-weight: bold;
 }
 
+.other-lessons-area {
+  margin: 60px 10% 0;
+}
+
+.other-lessons-area h2 {
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.other-lessons-area .basic-button {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 #other-lessons {
   position: relative;
   background-color: #edf0ff;
-  margin: 60px 10% 0;
   padding: 60px 30px 20px;
   border-radius: 30px;
 }
@@ -202,7 +218,7 @@
     justify-content: center;
   }
 
-  #other-lessons {
+  .other-lessons-area {
     margin: 60px 15px 0;
   }
 }
