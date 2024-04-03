@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
   <?php get_header() ?>
-  <title>Document</title>
 </head>
 
 <body <?php body_class(); ?>>
@@ -21,14 +20,9 @@
         </div>
         <?php $terms = get_the_terms($post->ID, 'article_category'); ?>
         <?php if($terms): ?>
-          <?php foreach($terms as $term): ?>
-            <?php if(str_contains($term->slug, 'step')): 
-              $step_num = $term->slug;
-              $dir = get_template_part('includes/steps/'.$step_num);
-            ?>
-              <?php if($dir): ?>
-                <?php $dir; ?>
-              <?php endif; ?>
+          <?php foreach($terms as $term): $slug = $term->slug; ?>
+            <?php if(str_contains($slug, 'step')): ?>
+              <?php get_template_part('includes/stepLessons', null, $slug); ?>
             <?php endif; ?>
           <?php endforeach; ?>
         <?php endif; ?>

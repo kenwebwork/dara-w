@@ -139,11 +139,11 @@
   font-weight: bold;
 }
 
-.other-lessons-area {
+.step-lessons-area {
   margin: 60px 10% 0;
 }
 
-.other-lessons-area h2 {
+.step-lessons-area h2 {
   margin-left: 25px;
   margin-bottom: 15px;
   font-size: 1.1rem;
@@ -151,7 +151,7 @@
   font-style: italic;
 }
 
-.other-lessons-area .basic-button {
+.step-lessons-area .basic-button {
   margin-top: 20px;
   font-weight: bold;
 }
@@ -203,7 +203,15 @@
   color: #000000de;
 }
 
+.step-lessons-area .basic-button-outer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 
+.to-category-outer {
+  margin: 60px calc(10% + 15px) 0;
+}
+  
 /* Tab and Mobile */
 @media screen and (max-width: 834px) {
 }

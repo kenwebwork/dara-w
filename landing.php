@@ -9,22 +9,11 @@ Template Name: landing
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <?php get_header() ?>
+  <?php get_header(); ?>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/landing.css">
-  <title>Document</title>
 </head>
 <body>
-  <header id="header">
-    <div class="hamburger-menu">
-      <input type="checkbox" id="menu-btn-check">
-      <label for="menu-btn-check" class="menu-btn" onclick="openCloseSlider()"><span></span></label>
-    </div>
-    <div class="logo">
-      <a href="<?php echo esc_url(home_url('/')); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo_rectangle.png" alt="site logo">
-      </a>
-    </div>
-  </header>
+  <?php get_template_part("includes/headerAndSlider"); ?>
   <main>
     <section class="first-view">
       <img src="<?php echo get_template_directory_uri(); ?>/img/home/firstView.jpg" alt="home view">
@@ -55,14 +44,14 @@ Template Name: landing
             <div class="service-card">
               <h3>レッスン一覧</h3>
               <ul>
-                <li><a href="#">SVO</a></li>
-                <li><a href="#">基礎文法</a></li>
-                <li><a href="#">前置詞</a></li>
-                <li><a href="#">前置詞</a></li>
-                <li><a href="#">前置詞</a></li>
+                <li><a href="<?php echo esc_url('/'); ?>">SVO</a></li>
+                <li><a href="<?php echo esc_url('/'); ?>">基礎文法</a></li>
+                <li><a href="<?php echo esc_url('/'); ?>">前置詞</a></li>
+                <li><a href="<?php echo esc_url('/'); ?>">前置詞</a></li>
+                <li><a href="#<?php echo esc_url('/'); ?>">前置詞</a></li>
               </ul>
               <div class="basic-button-outer">
-                <a href="categories.html" class="basic-button gradient-button linkto-categories">いますぐ学習</a>
+                <a href="<?php echo esc_url('/'); ?>" class="basic-button gradient-button linkto-categories">いますぐ学習</a>
               </div>
             </div>
           </div>
@@ -78,7 +67,7 @@ Template Name: landing
             <p>この意識は素晴らしいですが、それは必須要素ではありません。</p>
             <p>継続することが一番の習得の近道なので、高いモチベを維持するのはカロリーが高いです。なので、英語学習の勉強はだらだらでもOKです。</p>
             <p>練習を繰り返していくうちに自然と英語が出せるようになります。「気づいたら練習したことあるフレーズが口から出てた」、ここのような体験はだらだら継続でも再現可能です。</p>
-            <a href="categories.html" class="basic-button grad-button linkto-categories">いますぐ学習</a>
+            <a href="<?php echo esc_url('/'); ?>" class="basic-button grad-button linkto-categories">いますぐ学習</a>
           </div>
         </div>
         <div class="dara-right">
@@ -94,7 +83,7 @@ Template Name: landing
           <div class="availability-card-left">
             <h3>スキマ時間で勉強</h3>
             <p>1レッスンの所要時間は約15分、一日のスキマ時間に学習を進めることができます。直感的なページ操作で勉強に短時間でも集中できます。</p>
-            <a href="categories.html" class="linkto-categories2">いますぐ学習 →</a>
+            <a href="<?php echo esc_url('/'); ?>" class="linkto-categories2">いますぐ学習 →</a>
           </div>
           <div class="availability-card-right">
             <img src="<?php echo get_template_directory_uri(); ?>/img/home/shortTime.jpg" alt="隙間時間で勉強">
@@ -104,7 +93,7 @@ Template Name: landing
           <div class="availability-card-left">
             <h3>インプットとアウトプットを一度に</h3>
             <p>ただ練習をするのではなく、正しい知識を一緒に確認することで効率よく英語を身に着けます。</p>
-            <a href="categories.html" class="linkto-categories2">いますぐ学習 →</a>
+            <a href="<?php echo esc_url('/'); ?>" class="linkto-categories2">いますぐ学習 →</a>
           </div>
           <div class="availability-card-right">
             <img src="<?php echo get_template_directory_uri(); ?>/img/home/inputOutput.jpg" alt="インプットとアウトプット">
@@ -114,7 +103,7 @@ Template Name: landing
           <div class="availability-card-left">
             <h3>英語の学習習慣</h3>
             <p>各レッスンは繰り返し練習しやすいように作られており、学習の習慣化を手助けします。</p>
-            <a href="categories.html" class="linkto-categories2">いますぐ学習 →</a>
+            <a href="<?php echo esc_url('/'); ?>" class="linkto-categories2">いますぐ学習 →</a>
           </div>
           <div class="availability-card-right">
             <img src="<?php echo get_template_directory_uri(); ?>/img/home/practice.jpg" alt="practice">
@@ -197,14 +186,12 @@ Template Name: landing
           </div>
         </div>
         <div class="basic-button-outer">
-          <a href="categories.html" class="basic-button grad-button linkto-categories">いますぐ学習</a>
+          <a href="<?php echo esc_url('/'); ?>" class="basic-button grad-button linkto-categories">いますぐ学習</a>
         </div>
       </div>
     </section>
   </main>
   <?php get_footer(); ?>
-  <script src="<?php echo get_template_directory_uri(); ?>/public/public.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/lesson.js"></script>
   <?php  wp_footer(); ?>
 </body>
 </html>

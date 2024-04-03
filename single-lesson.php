@@ -24,14 +24,10 @@
         <?php if($terms): ?>
           <?php foreach($terms as $term): $slug = $term->slug; ?>
             <?php if(str_contains($slug, 'step')): ?>
-              <div class="other-lessons-area">
-                <h2>このレッスンはロードマップの <?php echo str_replace('step', 'Step', $slug); ?> に含まれています</h2>
-                <div id="other-lessons">
-                  <?php get_template_part('includes/steps/'.$slug); ?>
-                </div>
-                <div class="basic-button-outer">
-                  <a class="basic-button grad-button" href="<?php echo esc_url('/'); ?>">ロードマップ</a>
-                </div>
+              <?php get_template_part('includes/stepLessons', null, $slug); ?>
+            <?php else: ?>
+              <div class="to-category-outer">
+                <a href="<?php echo esc_url('/lesson_category/'.$slug); ?>">類似レッスン一覧 ></a>
               </div>
             <?php endif; ?>
           <?php endforeach; ?>

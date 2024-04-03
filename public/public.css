@@ -107,7 +107,7 @@ body {
 /* header */
 header {
   position: fixed;
-  top: 0;
+  top: -100px;
   left: 0;
   display: none;
   justify-content: space-between;
@@ -119,6 +119,10 @@ header {
   opacity: .9;
   transition: .25s;
   z-index: 10;
+}
+
+header.show {
+  top: 0;
 }
 
 /* menu */
@@ -409,7 +413,7 @@ footer ul li a {
 footer .copyright {
   margin-bottom: 20px;
   text-align: center;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 /* Tab and Mobile */
