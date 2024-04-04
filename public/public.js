@@ -1,8 +1,12 @@
 const menuBtnCheck = document.getElementById("menu-btn-check");
 const slider = document.getElementById("slider");
 
+function isSliderClose() {
+  return slider.classList.contains("unshown");
+}
+
 function openCloseSlider() {
-  if (slider.classList.contains("unshown")) {
+  if (isSliderClose()) {
     slider.classList.remove("unshown");
   } else {
     slider.classList.add("unshown");
@@ -28,7 +32,9 @@ function openCloseSlider() {
       if (isUp()) {
         header.classList.add('show')
       } else {
-        header.classList.remove('show');
+        if (isSliderClose()){
+          header.classList.remove('show');
+        }
       }
     } else if (window.pageYOffset == 0) {
       header.classList.add('show');
