@@ -18,5 +18,6 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/roadmap.css">
 <?php endif ?>
 
+<link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/img/dE.jpg">
 <title><?php wp_title('|', true, 'right'); bloginfo('name');?></title>
 <?php wp_head(); ?>

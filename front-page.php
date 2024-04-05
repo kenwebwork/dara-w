@@ -35,7 +35,7 @@ Template Name: Roadmap
           </div>
         </div>
         <div class="roadmap-right">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/roadmap_top2.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/roadmap_top2.webp" alt="">
         </div>
       </div>
       <div class="content jump-area">
@@ -51,12 +51,7 @@ Template Name: Roadmap
         <a id="to-top">TOP</a>
         <ul id="lesson-lists">
           <li class="lessons">
-            <h3 id="step0">Step 0 - 始めてみよう！</h3>
-            <ul class="lesson-list">
-              <li><a href="<?php echo esc_url('/about#how-to-use-this-site') ?>">このサイトの使い方</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">☆How are you? の使い方</a></li>
-              <li><a href="<?php echo esc_url('/') ?>">☆英語力の伸び方</a></li>
-            </ul>
+            <?php get_template_part("includes/steps/step0"); ?>
           </li>
           <li class="lessons">
             <?php get_template_part("includes/steps/step1"); ?>

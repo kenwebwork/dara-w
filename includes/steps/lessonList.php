@@ -1,5 +1,5 @@
 <ul class="lesson-list">
-  <?php if (is_singular('lesson')):?>
+  <?php if (is_singular('lesson') || is_singular('article')):?>
     <?php $slug = $post->post_name; ?>
     <?php foreach($args as $url => $lesson_title): ?>
       <?php

@@ -331,6 +331,10 @@ header .logo img {
   object-fit: contain;
 }
 
+.content figure img {
+  border-radius: 8px;
+}
+
 .content strong {
   font-weight: bold;
 }

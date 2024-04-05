@@ -7,7 +7,7 @@
     "iamdoing-and-ido2" => "現在進行形と現在形（I'm doing and I do）2",
     "idid" => "過去形（I did）",
     "idid-and-iwasdoing" => "過去形とその進行形（I did and I was doing）",
-    "properties-of-past-tence" => "[Article] 過去形の意外な性質"
+    "properties-of-past-tence" => "過去形の意外な性質"
   );
 
   get_template_part('includes/steps/lessonList', null, $lesson_array2_1);
@@ -30,7 +30,7 @@
     "ihavedone-and-idid" => "☆practice現在完了形と過去形（I have done, I did）",
     "ihaddone" => "過去完了形（I had done）",
     "" => "☆過去完了進行形（I had been doing）",
-    "have-and-havegot" => "[Article] have and have got",
+    "have-and-havegot" => "have and have got",
     "usedto" => "used to"
   );
 
@@ -39,7 +39,7 @@
 
 <h4>Step 2-4</h4>
 <ul class="lesson-list">
-  <li><a href="<?php echo esc_url('/') ?>">[Article] 未来を意味する現在形</a></li>
+  <li><a href="<?php echo esc_url('/') ?>">未来を意味する現在形</a></li>
   <li><a href="<?php echo esc_url('/') ?>">Will and shall</a></li>
   <li><a href="<?php echo esc_url('/') ?>">Will と be going to</a></li>
   <li><a href="<?php echo esc_url('/') ?>">will be doing and will have done</a></li>
