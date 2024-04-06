@@ -10,7 +10,6 @@ Template Name: Roadmap
 <html lang="ja">
 <head>
   <?php get_header() ?>
-  <title>Document</title>
 </head>
 
 <body <?php body_class(); ?>>

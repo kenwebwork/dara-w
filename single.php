@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
   <?php get_header() ?>
-  <title>Document</title>
 </head>
 <!-- mobile mode -->
 <!-- 問題のやじるし直す -->
