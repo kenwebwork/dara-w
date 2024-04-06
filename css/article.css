@@ -6,6 +6,11 @@
   border: solid 1.5px #000;
 }
 
+.article ul {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
 
 .step-lessons-area {
   margin: 60px 10% 0;

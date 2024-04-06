@@ -43,9 +43,9 @@ Template Name: Roadmap
         <a href="<?php echo esc_url('#step0') ?>">Step 0</a>
         <a href="<?php echo esc_url('#step1') ?>">Step 1</a>
         <a href="<?php echo esc_url('#step2') ?>">Step 2</a>
-        <a href="<?php echo esc_url('#step3') ?>">Step 3</a>
+        <!-- <a href="<?php echo esc_url('#step3') ?>">Step 3</a>
         <a href="<?php echo esc_url('#step4') ?>">Step 4</a>
-        <a href="<?php echo esc_url('#step5') ?>">Step 5</a>
+        <a href="<?php echo esc_url('#step5') ?>">Step 5</a> -->
       </div>
       <div class="content article">
         <a id="to-top">TOP</a>
@@ -59,7 +59,7 @@ Template Name: Roadmap
           <li class="lessons">
             <?php get_template_part("includes/steps/step2"); ?>
           </li>
-          <li class="lessons">
+          <!-- <li class="lessons">
             <h3 id="step3">Step 3 - ????</h3>
             <h4>Step 3-1</h4>
             <ul class="lesson-list">
@@ -88,7 +88,7 @@ Template Name: Roadmap
               <li><a href="<?php echo esc_url('/') ?>">all, every, whole</a></li>
               <li><a href="<?php echo esc_url('/') ?>">each every</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div>
       <?php get_footer(); ?>

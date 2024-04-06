@@ -2,24 +2,30 @@
 <html lang="ja">
 <head>
   <?php get_header() ?>
-  <title>Document</title>
 </head>
 
 <body <?php body_class(); ?>>
   <?php get_template_part("includes/headerAndSlider"); ?>
-  <!-- main content -->
   <div class="container">
-    <!-- sidebar -->
     <?php get_sidebar(); ?>
-    <!-- main area -->
     <div class="main-area">
       <?php if(have_posts()): ?>
+        <?php 
+          if (get_the_taxonomies()){$tax_slug = array_keys(get_the_taxonomies()) [0];}
+          if ($tax_slug === 'lesson_category'){
+            $color = 'content-blue';
+          } elseif ($tax_slug === 'article_category') {
+            $color = 'content-green';
+          } else {
+            $color = '';
+          }
+        ?>
         <div class="top-area">
           <div class="title-card">
             <h1><?php single_cat_title(); ?> 一覧</h1>
           </div>
         </div>
-        <div class="content content-blue">
+        <div class="content <?php echo $color; ?>">
           <ul class="lesson-list">
             <?php while(have_posts()): the_post(); ?>
               <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>  
