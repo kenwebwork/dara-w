@@ -465,7 +465,7 @@ img {
     padding-bottom: 0;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   /* top */
   #first-view-logo {
     top: 35%;

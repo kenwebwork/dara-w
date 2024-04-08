@@ -216,11 +216,8 @@
 @media screen and (max-width: 834px) {
 }
 @media screen and (max-width: 650px) {
-  .top-area .title-card {
-    width: 78%;
-  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .title-card .basic-button-outer {
     display: flex;
     justify-content: center;

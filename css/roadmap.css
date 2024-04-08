@@ -69,10 +69,6 @@
   text-decoration: underline;
 }
 
-ul#lesson-lists {
-  display: block;
-}
-
 #lesson-lists .lessons {
   background-color: #edf0ff;
   width: 100%;
@@ -121,7 +117,7 @@ ul#lesson-lists {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   
   .roadmap-right {
     margin-bottom: 20px;
