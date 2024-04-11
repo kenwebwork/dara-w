@@ -18,32 +18,37 @@
   $lesson_array2_2 = array(
     "ihavedone" => "現在完了形（I have done）",
     "ihavedone2" => "現在完了形（I have done）2",
-    // "ihavebeendoing" => "現在完了進行形（I have been doing）",
-    // "ihavebeendoing-and-ihavedone" => "現在完了形と現在完了進行形（I have done, I have been doing）"
+    "ihavebeendoing" => "現在完了進行形（I have been doing）",
+    "ihavebeendoing-and-ihavedone" => "現在完了形と現在完了進行形（I've done and I've been doing）"
   );
 
   get_template_part('includes/steps/lessonList', null, $lesson_array2_2);
 ?>
 
-<!-- <h4>Step 2-3</h4>
+<h4>Step 2-3</h4>
 <?php
   $lesson_array2_3 = array(
-    "ihavedone-and-idid" => "☆practice現在完了形と過去形（I have done, I did）",
+    "ihavedone-and-idid" => "現在完了形と過去形（I've done and I did）",
     "ihaddone" => "過去完了形（I had done）",
-    "" => "☆過去完了進行形（I had been doing）",
-    "have-and-havegot" => "have and have got",
+	  "ihadbeendoing" => "過去完了進行形（I had been doing）",
+    "have-and-havegot" => "have と have got",
     "usedto" => "used to"
   );
 
   get_template_part('includes/steps/lessonList', null, $lesson_array2_3);
-?> -->
+?>
 
-<!-- <h4>Step 2-4</h4>
-<ul class="lesson-list">
-  <li><a href="<?php echo esc_url('/') ?>">未来を意味する現在形</a></li>
-  <li><a href="<?php echo esc_url('/') ?>">Will and shall</a></li>
-  <li><a href="<?php echo esc_url('/') ?>">Will と be going to</a></li>
-  <li><a href="<?php echo esc_url('/') ?>">will be doing and will have done</a></li>
+<h4>Step 2-4</h4>
+<?php
+  $lesson_array2_3 = array(
+    "present-tenses-for-the-future" => "未来を意味する現在形",
+    "will-and-shall" => "will と shall",
+	  "iwill-and-iamgoingto" => "will と I'm going to"
+  );
+
+  get_template_part('includes/steps/lessonList', null, $lesson_array2_3);
+?>
+<!--
+  <li><a href="<?php echo esc_url('/') ?>">will be doing と will have done</a></li>
   <li><a href="<?php echo esc_url('/') ?>">時制のまとめ</a></li>
-  <li><a href="<?php echo esc_url('/') ?>">時制のまとめ2</a></li>
-</ul> -->
+  <li><a href="<?php echo esc_url('/') ?>">時制のまとめ2</a></li> -->

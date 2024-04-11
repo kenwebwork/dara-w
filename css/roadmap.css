@@ -70,7 +70,7 @@
 }
 
 ul#lesson-lists {
-  display: block;
+  /* display: block; */
 }
 
 #lesson-lists .lessons {
@@ -121,10 +121,20 @@ ul#lesson-lists {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+  .title-card {
+	background-color:transparent;
+	width: 100%;
+  }
+	
+  .title-card h1 {
+	margin: 0 auto;
+	padding; 0 10px;
+  }
   
   .roadmap-right {
     margin-bottom: 20px;
+	height:80%;
   }
 
   .jump-area {

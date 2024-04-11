@@ -34,7 +34,7 @@ Template Name: Roadmap
           </div>
         </div>
         <div class="roadmap-right">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/roadmap_top2.webp" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/roadmap_top3.webp" alt="">
         </div>
       </div>
       <div class="content jump-area">

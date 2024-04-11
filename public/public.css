@@ -444,7 +444,7 @@ footer .copyright {
     padding-top: 60px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .slider-contents ul {
     margin: 0 15px;
   }
@@ -456,7 +456,7 @@ footer .copyright {
 
   .top-area .title-card {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 25px;
   }
   
   .title-card h1 {
