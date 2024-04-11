@@ -6,6 +6,12 @@ Template Name: landing
 */
 ?>
 
+<!-- 
+
+写真を軽量化
+footer と sidebar のリンク配置し直し
+
+ -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -31,7 +37,7 @@ Template Name: landing
           <div class="service-desc-left">
             <h2>サービス内容</h2>
             <h3>英語を使えるようになるための練習の場です。</h3>
-            <p>練習を通じて英語を「知っている」から「使える」を目指します。片手操作とノーストレを目指して設計された学習サイトです。継続のしやすさと使いやすさを重視しており、お菓子を食べなが、寝そべりながらでも学習を進めることができます。</p>
+            <p>練習を通じて英語を「知っている」から「使える」を目指します。片手操作でのノーストレスを目指して設計された学習サイトです。継続のしやすさと使いやすさを重視しており、お菓子を食べなが、寝そべりながらでも学習を進めることができます。</p>
             <h3>daraEnglish の特徴</h3>
             <ul class="features">
               <li>全レッスン無料</li>
@@ -42,13 +48,13 @@ Template Name: landing
           </div>
           <div class="service-desc-right">
             <div class="service-card">
-              <h3>レッスン一覧</h3>
+              <h3>内容一覧</h3>
               <ul>
-                <li><a href="<?php echo esc_url('/'); ?>">SVO</a></li>
-                <li><a href="<?php echo esc_url('/'); ?>">基礎文法</a></li>
-                <li><a href="<?php echo esc_url('/'); ?>">前置詞</a></li>
-                <li><a href="<?php echo esc_url('/'); ?>">前置詞</a></li>
-                <li><a href="#<?php echo esc_url('/'); ?>">前置詞</a></li>
+                <li><a href="<?php echo esc_url('/'); ?>">ロードマップ - おすすめの順番に沿って学習</a></li>
+                <li><a href="<?php echo esc_url('/article/how-are-you/'); ?>">How are you の答え方</a></li>
+                <li><a href="<?php echo esc_url('/lesson/svc/'); ?>">SVCの使い方</a></li>
+                <li><a href="<?php echo esc_url('/lesson'); ?>">レッスン一覧</a></li>
+                <li><a href="<?php echo esc_url('/article'); ?>">記事一覧</a></li>
               </ul>
               <div class="basic-button-outer">
                 <a href="<?php echo esc_url('/'); ?>" class="basic-button gradient-button linkto-categories">いますぐ学習</a>
@@ -120,12 +126,17 @@ Template Name: landing
           <div class="content-area" id="desc-area">
             <div class="main-content">
               <div class="content-text">
-                <h2>h2 tag</h2>
-                <p>ここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入るここに内容が入る</p>
+                <p class="desc">現在完了形（I have done）と過去形（I did）は現在まで影響があるかで使い分けができます。</p>
                 <div class="en-example">
-                  <p class="en">This is a pen.</p>
-                  <p class="ja">これはぺンです。</p>
+                  <p class="en">① My brother has gone to Hokkaido, he’ll be back in 2 days</p>
+                  <p class="ja">兄は北海道に行きました。2日間に帰ってきます。</p>
                 </div>
+                <div class="en-example">
+                  <p class="en">② My brother went to Hokkaido, but he came back yesterday.</p>
+                  <p class="ja">兄は北海道に行きましたが、昨日帰ってきました。</p>
+                </div>
+                <p class="desc">上の例は、①今も兄は北海道にいる、②もう北海道にいないという表現です</p>
+                <p class="desc">過去形には「遠い」「関係がない」というニュアンスがあります。すなわち、現在と関係がない、現在から遠い話をするときに過去形を使います。</p>
               </div>
             </div>
           </div>
@@ -133,18 +144,18 @@ Template Name: landing
           <div class="qa-box-outer">
             <div class="qa-box">
               <input id="q-1" class="qa-checkbox" type="checkbox" />
-              <label for="q-1"><span>1.</span>必要なことの全ては練習することです。</label>
-              <div class="en">All we need is to practice.</div>
+              <label for="q-1"><span>1.</span>私の母はスペインで育ちました。</label>
+              <div class="en">My mother grew up in Spain.</div>
             </div>
             <div class="qa-box">
               <input id="q-2" class="qa-checkbox" type="checkbox" />
-              <label for="q-2"><span>2.</span>必要なことの全ては練習することです。</label>
-              <div class="en">All we need is to practice.</div>
+              <label for="q-2"><span>2.</span>パスワードを忘れてしまってログインできません。</label>
+              <div class="en">I've forgot my password and can't log in.</div>
             </div>
             <div class="qa-box">
               <input id="q-3" class="qa-checkbox" type="checkbox" />
-              <label for="q-3"><span>3.</span>必要なことの全ては練習することです。</label>
-              <div class="en">All we need is to practice.</div>
+              <label for="q-3"><span>3.</span>父はエジプトに2回行ったことがあります。</label>
+              <div class="en">My father has been to Egypt twice.</div>
             </div>
           </div>
         </div>

@@ -155,10 +155,19 @@ section {
 }
 .service-card li {
   margin: 10px;
-  margin-left: 50px;
+  margin-bottom: 15px;
 }
 .service-card li a {
-  text-decoration: underline;
+  font-weight: normal;
+  color: #000000de;
+  transition: .2s;
+}
+.service-card li a::before {
+  content: ">";
+  margin-right: 5px;
+}
+.service-card li a:hover {
+  font-weight: bold;
 }
 .service-card .linkto-categories {
   width: 80%;
@@ -273,6 +282,9 @@ img {
 }
 #desc-area {
   margin-bottom: 30px;
+}
+#desc-area p.desc {
+  margin-bottom: 10px;
 }
 .qa-box-outer {
   margin: 0 auto;
