@@ -157,7 +157,7 @@ header.show {
   top: 8px;
 }
 #menu-btn-check:checked ~ .menu-btn span {
-  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+  background-color: rgba(255, 255, 255, 0);
 }
 #menu-btn-check:checked ~ .menu-btn span::before {
   bottom: 0;
@@ -403,10 +403,10 @@ footer nav .site-nav li {
   margin: 0;
 }
 
-footer nav .site-nav li:not(:last-child) {
-  margin-right: 12px;
-  padding-right: 12px;
-  border-right: solid 1px #000000cf;
+footer nav .site-nav li:not(:first-child) {
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: solid 1px #000000cf;
 }
 
 footer ul li a {
@@ -473,6 +473,10 @@ footer .copyright {
 
   footer ul.site-nav {
     margin: 10px 10px 20px;
+    flex-wrap: wrap;
+  }
+  footer ul.site-nav li {
+    margin-bottom: 10px;
   }
 }
 

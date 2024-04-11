@@ -22,9 +22,9 @@ footer と sidebar のリンク配置し直し
   <?php get_template_part("includes/headerAndSlider"); ?>
   <main>
     <section class="first-view">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/firstView.jpg" alt="home view">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/firstView.webp" alt="home view">
       <div id="first-view-logo">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo_slightgray.png" alt="service logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo_slightgray.webp" alt="service logo">
       </div>
       <div class="first-view-comment">
         <p><span class="blue-text">だらだら</span>でも継続が近道</p>
@@ -77,7 +77,7 @@ footer と sidebar のリンク配置し直し
           </div>
         </div>
         <div class="dara-right">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/home/daradara.jpg" alt="だらだら">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/home/daradara.webp" alt="だらだら">
         </div>
       </div>
     </section>
@@ -92,7 +92,7 @@ footer と sidebar のリンク配置し直し
             <a href="<?php echo esc_url('/'); ?>" class="linkto-categories2">いますぐ学習 →</a>
           </div>
           <div class="availability-card-right">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/home/shortTime.jpg" alt="隙間時間で勉強">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/home/shortTime.webp" alt="隙間時間で勉強">
           </div>
         </div>
         <div class="availability-card row-reverse">
@@ -102,7 +102,7 @@ footer と sidebar のリンク配置し直し
             <a href="<?php echo esc_url('/'); ?>" class="linkto-categories2">いますぐ学習 →</a>
           </div>
           <div class="availability-card-right">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/home/inputOutput.jpg" alt="インプットとアウトプット">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/home/inputOutput.webp" alt="インプットとアウトプット">
           </div>
         </div>
         <div class="availability-card">
@@ -112,7 +112,7 @@ footer と sidebar のリンク配置し直し
             <a href="<?php echo esc_url('/'); ?>" class="linkto-categories2">いますぐ学習 →</a>
           </div>
           <div class="availability-card-right">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/home/practice.jpg" alt="practice">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/home/practice.webp" alt="practice">
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@ footer と sidebar のリンク配置し直し
         <div class="step-card-outer">
           <div class="step-card">
             <div class="img-area">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/home/step1.jpg" alt="step1">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/home/step1.webp" alt="step1">
             </div>
             <div class="step-title">1. ボタンをクリック</div>
             <div class="step-desc">
@@ -177,7 +177,7 @@ footer と sidebar のリンク配置し直し
           </div>
           <div class="step-card">
             <div class="img-area">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/home/step2.jpg" alt="step2">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/home/step2.webp" alt="step2">
             </div>
             <div class="step-title">2. 学習内容を選択</div>
             <div class="step-desc">
@@ -187,7 +187,7 @@ footer と sidebar のリンク配置し直し
           </div>
           <div class="step-card">
             <div class="img-area">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/home/step3.jpg" alt="step3">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/home/step3.webp" alt="step3">
             </div>
             <div class="step-title">3. レッスン開始</div>
             <div class="step-desc">
