@@ -41,6 +41,11 @@ body {
   font-family: "M PLUS Rounded 1c", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
+.ad-area {
+  margin: 10px auto;
+  text-align: center;
+}
+
 /* slider */
 #slider {
   position: fixed;

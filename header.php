@@ -17,8 +17,11 @@
 <?php if (is_front_page()): ?>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/roadmap.css">
 <?php endif ?>
+<meta name="google-adsense-account" content="ca-pub-5571471670029527">
 
 <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/img/dara_logo.ico">
 <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/img/dara_logo.png">
 <title><?php wp_title('|', true, 'right'); bloginfo('name');?></title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5571471670029527"
+     crossorigin="anonymous"></script>
 <?php wp_head(); ?>
