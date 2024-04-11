@@ -6,12 +6,6 @@ Template Name: landing
 */
 ?>
 
-<!-- 
-
-写真を軽量化
-footer と sidebar のリンク配置し直し
-
- -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
