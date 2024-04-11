@@ -10,7 +10,7 @@ Template Name: Roadmap
 <html lang="ja">
 <head>
   <?php get_header() ?>
-  <!--  -->
+  <meta name="description" content="英語を使えるようになるための練習用のサイトです。レッスンの問題を声に出して解きながら英会話を身につけましょう！">
 </head>
 
 <body <?php body_class(); ?>>
