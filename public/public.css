@@ -10,6 +10,10 @@ green 43BB64
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
 
+.grecaptcha-badge { 
+  visibility: hidden !important;
+}
+
 body {
   overflow-x: hidden;
   font-family: "M PLUS Rounded 1c", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -33,6 +37,9 @@ body {
   color: #fff;
 }
 
+.noto {
+  font-family: "M PLUS Rounded 1c", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
 
 /* slider */
 #slider {
@@ -186,9 +193,6 @@ header .logo img {
   width: 22vw;
   height: 100vh;
   background-color: #2c2c2c;
-  font-family: "Kosugi", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .sidebar .logo {
@@ -234,6 +238,9 @@ header .logo img {
 .sidebar nav li a {
   font-size: 1.25rem;
   color: #fff;
+  font-family: "Kosugi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .sidebar nav li a::after {
   content: "";
