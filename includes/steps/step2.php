@@ -40,15 +40,13 @@
 
 <h4>Step 2-4</h4>
 <?php
-  $lesson_array2_3 = array(
+  $lesson_array2_4 = array(
     "present-tenses-for-the-future" => "未来を意味する現在形",
     "will-and-shall" => "will と shall",
-	  "iwill-and-iamgoingto" => "will と I'm going to"
+	  "iwill-and-iamgoingto" => "will と I'm going to",
+	  "iwillbedoing" => "未来進行形（I will be doing）",
+	  "iwillhavedone" => "未来完了形（I will have done）"
   );
 
-  get_template_part('includes/steps/lessonList', null, $lesson_array2_3);
+  get_template_part('includes/steps/lessonList', null, $lesson_array2_4);
 ?>
-<!--
-  <li><a href="<?php echo esc_url('/') ?>">will be doing と will have done</a></li>
-  <li><a href="<?php echo esc_url('/') ?>">時制のまとめ</a></li>
-  <li><a href="<?php echo esc_url('/') ?>">時制のまとめ2</a></li> -->

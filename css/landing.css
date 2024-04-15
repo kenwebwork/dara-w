@@ -285,6 +285,10 @@ img {
 }
 #desc-area p.desc {
   margin-bottom: 10px;
+  line-height: 1.8rem;
+}
+#desc-area .en-example {
+  line-height: 1.8rem;
 }
 .qa-box-outer {
   margin: 0 auto;
