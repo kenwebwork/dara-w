@@ -79,6 +79,9 @@ section {
   color: #006fcf;
   font-size: 2.4rem;
 }
+#top-mobile {
+  display: none;
+}
 
 /* service */
 .service-desc-outer {
@@ -488,6 +491,13 @@ img {
     left: 50%;
     width: 240px;
     height: 240px;
+  }
+
+  #top-desk {
+    display: none;
+  }
+  #top-mobile {
+    display: block;
   }
 
   /* daradara */

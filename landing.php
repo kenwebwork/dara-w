@@ -16,7 +16,8 @@ Template Name: landing
   <?php get_template_part("includes/headerAndSlider"); ?>
   <main>
     <section class="first-view">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/home/firstView.webp" alt="home view">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/firstView2.webp" alt="home view" id="top-desk">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/home/firstView22.webp" alt="home view" id="top-mobile">
       <div id="first-view-logo">
         <img src="<?php echo get_template_directory_uri(); ?>/img/logo_slightgray.webp" alt="service logo">
       </div>
