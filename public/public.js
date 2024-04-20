@@ -1,4 +1,5 @@
 const menuBtnCheck = document.getElementById("menu-btn-check");
+menuBtnCheck.checked = false;
 const slider = document.getElementById("slider");
 
 function isSliderClose() {

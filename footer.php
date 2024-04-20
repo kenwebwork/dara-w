@@ -9,7 +9,6 @@
   <p class="copyright">Copyright &copy; daraEnglish 2024</p>
 </footer>
   
-<script src="//code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/public/public.js"></script>
 <?php if (is_singular('lesson')): ?>
   <script src="<?php echo get_template_directory_uri(); ?>/js/lesson.js"></script>

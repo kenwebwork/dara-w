@@ -45,7 +45,8 @@
     "will-and-shall" => "will と shall",
 	  "iwill-and-iamgoingto" => "will と I'm going to",
 	  "iwillbedoing" => "未来進行形（I will be doing）",
-	  "iwillhavedone" => "未来完了形（I will have done）"
+	  "iwillhavedone" => "未来完了形（I will have done）",
+	  "summary-of-tenses" => "時制のまとめ"
   );
 
   get_template_part('includes/steps/lessonList', null, $lesson_array2_4);

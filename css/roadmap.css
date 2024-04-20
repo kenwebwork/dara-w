@@ -19,11 +19,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 280px;
+  /* height: 280px; */
 }
 
 .roadmap-left {
   flex: 4;
+  margin-bottom: 0;
 }
 
 .roadmap-right {
@@ -106,38 +107,58 @@ ul#lesson-lists {
 }
 
 @media screen and (max-width: 1000px) {
+  .top-area .title-card {
+    margin-bottom: 0;
+  }
   .roadmap_top {
     flex-direction: column-reverse;
     justify-content: center;
   }
 
   .roadmap_top div {
-    margin-bottom: 30px;
     margin-left: 0;
+  }
+
+  .roadmap_top .roadmap-right {
+    margin-bottom: 0;
+  }
+  .roadmap_top .roadmap-left {
+    margin-bottom: 0;
+  }
+  
+  .roadmap-left .top-buttons {
+    margin-bottom: 0;
+    margin-top: 30px;
   }
 
   .roadmap_top div img {
     display: block;
   }
+
+  .content.jump-area {
+    margin: 0;
+    padding: 0;
+    padding-left: calc(10% + 30px);
+  }
 }
 
 @media screen and (max-width: 480px) {
   .title-card {
-	background-color:transparent;
-	width: 100%;
+    background-color:transparent;
+    width: 100%;
   }
 	
   .title-card h1 {
-	margin: 0 auto;
-	padding: 0 10px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
   
   .roadmap-right {
     margin-bottom: 20px;
-	height:80%;
+	  height:80%;
   }
 
-  .jump-area {
-    padding: 0;
+  .content.jump-area {
+    padding-left: calc(15px + 30px);
   }
 }

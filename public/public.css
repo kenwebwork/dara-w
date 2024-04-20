@@ -355,6 +355,18 @@ header .logo img {
   background:linear-gradient(transparent 60%, #99d8fc 60%);
 }
 
+.content .yellow-highlight {
+  background:linear-gradient(transparent 60%, #ff6 60%);
+}
+
+.content .red-highlight {
+  background:linear-gradient(transparent 60%, #f8a190 60%);
+}
+
+.content .green-highlight {
+  background:linear-gradient(transparent 60%, #acf890 60%);
+}
+
 .content a.basic-button.blue {
   margin-bottom: 50px;
   background-color: #5e17eb;
