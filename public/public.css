@@ -395,7 +395,6 @@ header .logo img {
   padding: 20px;
   background-color: #fff;
   border-radius: 30px;
-  font-weight: bold;
 }
 .en-example.blue {
   background-color: #edf0ff;
@@ -407,6 +406,14 @@ header .logo img {
   margin-top: 10px;
   padding-top: 10px;
   border-top: solid 1px #000000de;
+}
+
+.word-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  line-height: 1.8rem;
+  border: solid 2px #5e17eb;
 }
 
 /* footer */

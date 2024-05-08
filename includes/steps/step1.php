@@ -6,7 +6,7 @@
     "svoo" => "SVOO",
     "svoc" => "SVOC",
     "sv" => "SV",
-    "a-characteristic-of-japanese" => "日本語の特徴"
+    "a-characteristic-of-japanese" => "[Article] 日本語の特徴"
   );
 
   get_template_part('includes/steps/lessonList', null, $lesson_array1);

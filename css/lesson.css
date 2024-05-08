@@ -51,8 +51,7 @@
   align-items: center;
   background-color: #edf0ff;
   border-radius: 30px;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .qa-box:last-child {
@@ -109,6 +108,7 @@
   opacity: 0;
   transition: .15s;
   line-height: 1.3em;
+  font-weight: bold;
 }
 
 .qa-box:nth-child(n+10) label {
