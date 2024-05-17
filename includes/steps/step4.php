@@ -6,6 +6,7 @@
     "so-and-such" => "so と such",
     "enough-and-too" => "enough と too",
     "still-notanymore-nolonger" => "still, not … any more, no longer",
+    "even" => "even",
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array4_1);
