@@ -301,22 +301,24 @@ header .logo img {
 .content h3,
 .content h4 {
   margin-bottom: 30px;
-}
-.content h2,
-.content h3 {
   font-weight: bold;
+}
+
+.content h2:not(:first-of-type),
+.content h3,
+.content h4 {
+  margin-top: 50px;
 }
 
 .content h2 {
   font-size: 1.6rem;
 }
-.content h2:not(:first-of-type) {
-  margin-top: 50px;
-}
-
 .content h3 {
-  margin-top: 50px;
   font-size: 1.4em;
+}
+.content h4 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 .content p {
@@ -401,6 +403,7 @@ header .logo img {
 }
 .en-example p {
   margin-bottom: 0;
+  line-height: 1.3rem;
 }
 .en-example p.ja{
   margin-top: 10px;

@@ -41,7 +41,7 @@
 <h4>Step 2-4</h4>
 <?php
   $lesson_array2_4 = array(
-    "present-tenses-for-the-future" => "未来を意味する現在形",
+    "present-tenses-for-the-future" => "[Article] 未来を意味する現在形",
     "will-and-shall" => "will と shall",
 	  "iwill-and-iamgoingto" => "will と I'm going to",
 	  "iwillbedoing" => "未来進行形（I will be doing）",

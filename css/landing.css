@@ -46,6 +46,7 @@ section {
   position: relative;
   width: 100vw;
   height: 80vh;
+  background-color: #eef0ff;
   overflow: hidden;
 }
 .first-view img {
@@ -79,9 +80,7 @@ section {
   color: #006fcf;
   font-size: 2.4rem;
 }
-#top-mobile {
-  display: none;
-}
+
 
 /* service */
 .service-desc-outer {
@@ -437,6 +436,9 @@ img {
     max-width: 70%;
   }
   /* top */
+  .first-view {
+    height: 450px;
+  }
   .first-view-comment {
     left: 4vw;
     right: 4vw;
@@ -495,9 +497,6 @@ img {
 
   #top-desk {
     display: none;
-  }
-  #top-mobile {
-    display: block;
   }
 
   /* daradara */

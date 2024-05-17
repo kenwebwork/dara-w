@@ -23,3 +23,7 @@ add_shortcode( 'ge', function( $atts, $content ){
 add_shortcode( 'wb', function( $atts, $content ){
   return '<div class="word-box">' . $content . '</div>';
 } );
+
+add_shortcode( 'br', function( $atts, $content ){
+  return '<br />⇅<br />';
+} );
