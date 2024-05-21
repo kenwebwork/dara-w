@@ -27,6 +27,8 @@
   $lesson_array4_3 = array(
     "adjectives-ending-ing" => "-ing で終わる形容詞",
     "adjectives-ending-ed" => "-ed で終わる形容詞",
+    "images-adjective-ending-inganded" => "[Article]イメージで覚える -ing と -ed 形容詞",
+
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array4_3);
