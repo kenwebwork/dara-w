@@ -28,8 +28,17 @@
     "adjectives-ending-ing" => "-ing で終わる形容詞",
     "adjectives-ending-ed" => "-ed で終わる形容詞",
     "images-adjective-ending-inganded" => "[Article] イメージで覚える -ing と -ed 形容詞",
-
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array4_3);
+?>
+<h4>Step 4-4 - 受身</h4>
+<?php
+  $lesson_array4_4 = array(
+    "bedone" => "受身（be done）",
+    "beendone-beingdone" => "受身 2（been done, being done）",
+
+  );
+  
+  get_template_part('includes/steps/lessonList', null, $lesson_array4_4);
 ?>
