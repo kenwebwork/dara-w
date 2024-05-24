@@ -37,7 +37,7 @@
   $lesson_array4_4 = array(
     "bedone" => "受身（be done）",
     "beendone-beingdone" => "受身 2（been done, being done）",
-
+    "havesomethingdone" => "受身 3（have something done）",
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array4_4);
