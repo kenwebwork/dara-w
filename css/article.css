@@ -1,5 +1,5 @@
-.content.article {
-  background-color: #edfff2;
+.content.article p:not(.en-example p) {
+  margin-bottom: 40px;
 }
 
 .en-example {
@@ -7,8 +7,7 @@
 }
 
 .article ul {
-  background-color: #fff;
-  padding: 20px 10px;
+  margin: 42px 0;
   border-radius: 20px;
 }
 
