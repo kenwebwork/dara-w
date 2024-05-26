@@ -23,10 +23,6 @@ ul#lesson-lists {
   width: 100%;
 }
 
-.lessons.green {
-  background-color: #edfff2;
-}
-
 .content .lessons h3 {
   position: relative;
   display: inline-block;
@@ -39,8 +35,21 @@ ul#lesson-lists {
   font-size: 1.3rem;
   color: #fff;
 }
+
+.lessons.green {
+  background-color: #edfff2;
+}
+
 .content .lessons.green h3 {
   background-color: #43BB64;
+}
+
+.lessons.gray {
+  background-color: #f7f7f7;
+}
+
+.content .lessons.gray h3 {
+  background-color: #b6b6b6;
 }
 
 .lessons h3 a {

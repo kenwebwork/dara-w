@@ -23,7 +23,7 @@
                 $term_slug = $term->slug;
                 if(str_contains($term_slug, 'step')){continue;}
               ?>
-              <li class="lessons green">
+              <li class="lessons gray">
                 <h3><a href="<?php echo get_term_link($term)?>"><?php echo $term->name ?></a></h3>
                 <ul class="lesson-list">
                   <?php
