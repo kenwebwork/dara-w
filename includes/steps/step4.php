@@ -38,6 +38,7 @@
     "bedone" => "受身（be done）",
     "beendone-beingdone" => "受身 2（been done, being done）",
     "havesomethingdone" => "受身 3（have something done）",
+    "itissaid" => "受身（it is said）",
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array4_4);
