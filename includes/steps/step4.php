@@ -37,6 +37,7 @@
   $lesson_array4_4 = array(
     "bedone" => "受身（be done）",
     "beendone-beingdone" => "受身 2（been done, being done）",
+    "besupposedto" => "be supposed to",
     "havesomethingdone" => "have something done",
     "itissaid" => "it is said",
   );
