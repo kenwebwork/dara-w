@@ -1,0 +1,133 @@
+ul#lesson-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  height: auto;
+  margin: 0;
+}
+
+#lesson-lists .lessons {
+  width: 48%;
+  margin: 5px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  padding: 0;
+  list-style: none;
+}
+
+.lessons {
+  border-radius: 20px;
+  background-color: #edf0ff;
+  width: 100%;
+}
+
+.content .lessons h3 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #5e17eb;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.lessons.green {
+  background-color: #edfff2;
+}
+
+.content .lessons.green h3 {
+  background-color: #43BB64;
+}
+
+.lessons.gray {
+  background-color: #f7f7f7;
+}
+
+.content .lessons.gray h3 {
+  background-color: #b6b6b6;
+}
+
+.lessons h3 a {
+  color: #fff;
+}
+
+.lessons h3 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 2;
+}
+
+#lesson-lists .lessons ul {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 18px 10px 24px;
+  color: #777;
+}
+#lesson-lists .lessons ul li {
+  width: calc(100% - 40px);
+  margin-bottom: 15px;
+  list-style: disc;
+  line-height: 1.45rem;
+  font-weight: bold;
+  transition: .1s;
+}
+#lesson-lists .lessons ul li a {
+  margin-bottom: 0;
+}
+#lesson-lists .lessons ul li:hover {
+  color: #000000de;
+}
+#lesson-lists .lessons ul li.no-dot {
+  list-style: none;
+}
+#lesson-lists .lessons ul li.no-dot a {
+  color: #5e17ebaa;
+}
+#lesson-lists .lessons ul li.no-dot a:hover {
+  color: #5e17ebff;
+}
+#lesson-lists .lessons ul li a {
+  display: block;
+  color: #777;
+  font-size: 1.2rem;
+}
+#lesson-lists .lessons ul li a:hover {
+  color: #000000de;
+}
+
+
+/* Tab and Mobile */
+@media screen and (max-width: 834px) {
+  
+}
+@media screen and (max-width: 650px) {
+  ul#lesson-lists {
+    justify-content: center;
+  }
+  
+  #lesson-lists .lessons {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #lesson-lists .lessons ul li {
+    margin-bottom: 12px;
+  }
+
+  #lesson-lists li.lessons:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  
+}

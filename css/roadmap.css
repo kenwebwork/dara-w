@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+
+#to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 1.3rem;
+  font-family: "Kosugi", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #777;
+  cursor: pointer;
+  transition: .1s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.roadmap_top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* height: 280px; */
+}
+
+.roadmap-left {
+  flex: 4;
+  margin-bottom: 0;
+}
+
+.roadmap-right {
+  flex: 6;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.roadmap-right img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.grad-button.grad-green {
+  width: 200px;
+  text-align: center;
+  background: linear-gradient(to right, #4ceaae, #66b1ff);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.roadmap_top .basic-button-outer:first-child {
+  margin-bottom: 20px;
+}
+
+.jump-area {
+  margin-left: 25px;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.jump-area span {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.jump-area a {
+  display: inline-block;
+  margin-right: 18px;
+  color: #000000de;
+  text-decoration: underline;
+}
+
+ul#lesson-lists {
+  /* display: block; */
+}
+
+#lesson-lists .lessons {
+  background-color: #edf0ff;
+  width: 100%;
+  min-height: auto;
+  padding-bottom: 24px;
+}
+
+#lesson-lists .lessons .lesson-list {
+  margin-bottom: 0;
+}
+
+#lesson-lists .lessons li:last-child {
+  margin-bottom: 0;
+}
+
+.content .lessons h3 {
+  background-color: #5e17eb;
+}
+
+.content .lessons h4 {
+  margin: 30px 20px 10px;
+  padding: 3px 5px;
+  border-left: solid 3px #5e17eb;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #444;
+}
+
+.content .lessons h4:first-of-type {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .top-area .title-card {
+    margin-bottom: 0;
+  }
+  .roadmap_top {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .roadmap_top div {
+    margin-left: 0;
+  }
+
+  .roadmap_top .roadmap-right,
+  .roadmap_top .roadmap-left,
+  .roadmap-left .top-buttons {
+    margin-bottom: 0;
+  }
+  
+  .roadmap-left .top-buttons {
+    margin-top: 30px;
+  }
+
+  .roadmap_top div img {
+    display: block;
+  }
+
+  .content.jump-area {
+    margin: 0;
+    padding: 0;
+    padding-left: calc(10% + 30px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-card {
+    background-color:transparent;
+    width: 100%;
+  }
+	
+  .title-card h1 {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .roadmap-right {
+    margin-bottom: 20px;
+	  height:80%;
+  }
+
+  .content.jump-area {
+    padding-left: calc(15px + 30px);
+  }
+}
