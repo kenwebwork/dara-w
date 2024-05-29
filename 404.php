@@ -14,7 +14,7 @@
     <div class="main-area">
       <div class="top-area">
         <div class="title-card">
-          <h1>Sorry...</h1>
+          <h1>Sorry...テスト</h1>
         </div>
       </div>
       <div class="content">
