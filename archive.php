@@ -15,7 +15,7 @@
           if ($tax_slug === 'lesson_category'){
             $color = 'content-blue';
           } elseif ($tax_slug === 'article_category') {
-            $color = 'content-green';
+            $color = 'content-gray';
           } else {
             $color = '';
           }
