@@ -3,6 +3,7 @@
 <?php
   $lesson_array5_1 = array(
     "who-that-which-of-relativepronoun" => "関係代名詞の who, that, which",
+    "relativepronoun-without-who-that-which" => "関係代名詞 who, that, which の省略",
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array5_1);
