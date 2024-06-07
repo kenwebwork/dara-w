@@ -14,7 +14,8 @@
 <h4>Step 5-2 - 分詞</h4>
 <?php
   $lesson_array5_2 = array(
-    "ing-clause" => "現在分詞（-ing）",
+    "modification-of-ing-clause" => "現在分詞（-ing）の修飾",
+    "modification-of-ed-clause" => "過去分詞（-ed）の修飾",
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array5_2);
