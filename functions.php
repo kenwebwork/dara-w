@@ -20,6 +20,21 @@ add_shortcode( 're', function( $atts, $content ){
 add_shortcode( 'ge', function( $atts, $content ){
   return '<span class="green-highlight">' . $content . '</span>';
 } );
+
+add_shortcode( 'bbl', function( $atts, $content ){
+  return '<strong class="word-box">' . $content . '</strong>';
+} );
+add_shortcode( 'bye', function( $atts, $content ){
+  return '<strong class="yellow-highlight">' . $content . '</strong>';
+} );
+add_shortcode( 'bre', function( $atts, $content ){
+  return '<strong class="red-highlight">' . $content . '</strong>';
+} );
+add_shortcode( 'bge', function( $atts, $content ){
+  return '<strong class="green-highlight">' . $content . '</strong>';
+} );
+
+
 add_shortcode( 'wb', function( $atts, $content ){
   return '<div class="word-box">' . $content . '</div>';
 } );
