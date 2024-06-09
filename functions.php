@@ -22,7 +22,7 @@ add_shortcode( 'ge', function( $atts, $content ){
 } );
 
 add_shortcode( 'bbl', function( $atts, $content ){
-  return '<strong class="yellow-highlight">' . $content . '</strong>';
+  return '<strong class="blue-highlight">' . $content . '</strong>';
 } );
 add_shortcode( 'bye', function( $atts, $content ){
   return '<strong class="yellow-highlight">' . $content . '</strong>';
