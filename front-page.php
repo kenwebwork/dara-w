@@ -69,7 +69,7 @@ Template Name: Roadmap
 	  <li class="lessons">
             <?php get_template_part("includes/steps/step5"); ?>
           </li>
-	  <li class="lessons">
+	  <li class="lessons extra">
             <?php get_template_part("includes/steps/extra"); ?>
           </li>
         </ul>
