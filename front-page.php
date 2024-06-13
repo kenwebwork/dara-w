@@ -46,6 +46,7 @@ Template Name: Roadmap
         <a href="<?php echo esc_url('#step3') ?>">Step 3</a>
         <a href="<?php echo esc_url('#step4') ?>">Step 4</a>
         <a href="<?php echo esc_url('#step5') ?>">Step 5</a>
+        <a href="<?php echo esc_url('#step5') ?>">Extra</a>
       </div>
       <div class="content article">
         <a id="to-top">TOP</a>
@@ -67,6 +68,9 @@ Template Name: Roadmap
           </li>
 	  <li class="lessons">
             <?php get_template_part("includes/steps/step5"); ?>
+          </li>
+	  <li class="lessons">
+            <?php get_template_part("includes/steps/extra"); ?>
           </li>
         </ul>
       </div>
