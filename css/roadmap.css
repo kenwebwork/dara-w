@@ -81,6 +81,14 @@ ul#lesson-lists {
   padding-bottom: 24px;
 }
 
+#lesson-lists .lessons.extra h3 {
+  background-color: #b6b6b6;
+}
+
+#lesson-lists .lessons.extra {
+  background-color: #f7f7f7;
+}
+
 #lesson-lists .lessons .lesson-list {
   margin-bottom: 0;
 }
