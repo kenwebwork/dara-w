@@ -24,6 +24,7 @@
 <?php
   $lesson_array5_3 = array(
     "how-to-use-if" => "[Article] if の使い方と覚え方",
+    "if-first-conditional" => "if – First conditional",
   );
   
   get_template_part('includes/steps/lessonList', null, $lesson_array5_3);
