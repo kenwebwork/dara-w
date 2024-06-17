@@ -20,3 +20,11 @@
   
   get_template_part('includes/steps/lessonList', null, $lesson_array5_2);
 ?>
+<h4>Step 5-3 - if</h4>
+<?php
+  $lesson_array5_3 = array(
+    "how-to-use-if" => "[Article] if の使い方と覚え方",
+  );
+  
+  get_template_part('includes/steps/lessonList', null, $lesson_array5_3);
+?>
