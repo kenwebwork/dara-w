@@ -16,6 +16,9 @@
           </div>
         </div>
         <div class="content article">
+          <div class="thumbnail">
+            <?php the_post_thumbnail(); ?>
+          </div>
           <?php the_content(); ?>
         </div>
         <?php $terms = get_the_terms($post->ID, 'article_category'); ?>
