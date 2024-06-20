@@ -19,7 +19,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  /* height: 280px; */
 }
 
 .roadmap-left {
@@ -50,9 +49,19 @@
   margin-bottom: 20px;
 }
 
+.content .title-card {
+  font-size: 1.3rem;
+}
+
+.jump-area h1{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .jump-area {
   margin-left: 25px;
-  font-size: 1.1rem;
   line-height: 1.6rem;
   margin-top: 10px;
   padding-bottom: 10px;
@@ -68,10 +77,6 @@
   margin-right: 18px;
   color: #000000de;
   text-decoration: underline;
-}
-
-ul#lesson-lists {
-  /* display: block; */
 }
 
 #lesson-lists .lessons {
