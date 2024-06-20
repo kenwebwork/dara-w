@@ -18,11 +18,6 @@ Template Name: Roadmap
   <div class="container">
     <?php get_sidebar(); ?>
     <div class="main-area">
-      <div class="top-area">
-        <div class="title-card">
-          <h1>daraEnglish - ロードマップ</h1>
-        </div>
-      </div>
       <div class="content roadmap_top">
         <div class="roadmap-left">
           <div class="top-buttons">
@@ -39,6 +34,7 @@ Template Name: Roadmap
         </div>
       </div>
       <div class="content jump-area">
+        <h1>話せるようになるロードマップ</h1>
         <span>Jump to...</span>
         <a href="<?php echo esc_url('#step0') ?>">Step 0</a>
         <a href="<?php echo esc_url('#step1') ?>">Step 1</a>
