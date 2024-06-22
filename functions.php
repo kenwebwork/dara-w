@@ -12,7 +12,7 @@ add_shortcode( 'tbl', function( $atts, $content ){
   return '<span class="text-blue">' . $content . '</strong>';
 } );
 
-add_shortcode( 'tbl', function( $atts, $content ){
+add_shortcode( 'tre', function( $atts, $content ){
   return '<span class="text-red">' . $content . '</strong>';
 } );
 
