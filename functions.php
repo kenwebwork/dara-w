@@ -9,11 +9,11 @@ add_shortcode( 'bo', function( $atts, $content ){
 } );
 
 add_shortcode( 'tbl', function( $atts, $content ){
-  return '<span class="text-blue">' . $content . '</strong>';
+  return '<span class="text-blue">' . $content . '</span>';
 } );
 
 add_shortcode( 'tre', function( $atts, $content ){
-  return '<span class="text-red">' . $content . '</strong>';
+  return '<span class="text-red">' . $content . '</span>';
 } );
 
 add_shortcode( 'bl', function( $atts, $content ){
