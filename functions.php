@@ -8,6 +8,14 @@ add_shortcode( 'bo', function( $atts, $content ){
   return '<strong>' . $content . '</strong>';
 } );
 
+add_shortcode( 'tbl', function( $atts, $content ){
+  return '<span class="text-blue">' . $content . '</strong>';
+} );
+
+add_shortcode( 'tbl', function( $atts, $content ){
+  return '<span class="text-red">' . $content . '</strong>';
+} );
+
 add_shortcode( 'bl', function( $atts, $content ){
   return '<span class="blue-highlight">' . $content . '</span>';
 } );
