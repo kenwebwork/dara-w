@@ -364,6 +364,14 @@ header .logo img {
   font-weight: bold;
 }
 
+.content span.text-blue {
+  color: #5e17eb;
+}
+
+.content span.text-red {
+  color: #cf2e2e;
+}
+
 .content .blue-highlight {
   background:linear-gradient(transparent 60%, #99d8fc 60%);
 }
