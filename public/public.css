@@ -430,6 +430,9 @@ header .logo img {
   padding-top: 10px;
   border-top: solid 1px #000000de;
 }
+.en-example ul {
+  margin: 0;
+}
 
 .word-box {
   background-color: #fff;
